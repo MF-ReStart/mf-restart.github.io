@@ -505,7 +505,7 @@
       <span class="token key atrule">targetPort</span><span class="token punctuation">:</span> <span class="token number">6379</span>
 </code></pre>
 <p>&#x901A;&#x8FC7;&#x6267;&#x884C; <code>kubectl get endpoints my-service</code> &#x547D;&#x4EE4;&#x53EF;&#x4EE5;&#x770B;&#x5230; Service &#x540E;&#x7AEF;&#x6240;&#x4EE3;&#x7406;&#x7684; Pod&#xFF1A;</p>
-<pre class="language-"><code class="lang-shell">NAME         ENDPOINTS                                                   AGE
+<pre class="language-"><code class="lang-bash">NAME         ENDPOINTS                                                   AGE
 my-service   <span class="token number">10.244</span>.169.179:6379,10.244.169.180:6379,10.244.36.82:6379   6m3s
 </code></pre>
 <h2 id="service-&#x865A;&#x62DF;-ip-&#x548C;&#x670D;&#x52A1;&#x4EE3;&#x7406;"><a name="service-&#x865A;&#x62DF;-ip-&#x548C;&#x670D;&#x52A1;&#x4EE3;&#x7406;" class="anchor-navigation-ex-anchor" href="#service-&#x865A;&#x62DF;-ip-&#x548C;&#x670D;&#x52A1;&#x4EE3;&#x7406;"><i class="fa fa-link" aria-hidden="true"></i></a>1.2. Service &#x865A;&#x62DF; IP &#x548C;&#x670D;&#x52A1;&#x4EE3;&#x7406;</h2>
@@ -570,7 +570,7 @@ my-service   <span class="token number">10.244</span>.169.179:6379,10.244.169.18
 <h2 id="service-&#x542F;&#x7528;-ipvs-&#x4EE3;&#x7406;&#x6A21;&#x578B;"><a name="service-&#x542F;&#x7528;-ipvs-&#x4EE3;&#x7406;&#x6A21;&#x578B;" class="anchor-navigation-ex-anchor" href="#service-&#x542F;&#x7528;-ipvs-&#x4EE3;&#x7406;&#x6A21;&#x578B;"><i class="fa fa-link" aria-hidden="true"></i></a>1.4. Service &#x542F;&#x7528; ipvs &#x4EE3;&#x7406;&#x6A21;&#x578B;</h2>
 <p>Kubernetes &#x7684; <code>1.11</code> &#x7248;&#x672C;&#x540E;&#xFF0C;&#x9ED8;&#x8BA4;&#x4F7F;&#x7528; ipvs&#xFF0C;&#x5982;&#x679C;&#x8282;&#x70B9;&#x7684;&#x5185;&#x6838;&#x4E0D;&#x652F;&#x6301;&#x6216;&#x6CA1;&#x6709;&#x5F00;&#x542F; ipvs &#x5219; kubernetes &#x4F1A;&#x81EA;&#x52A8;&#x964D;&#x7EA7;&#x4E3A;&#x4F7F;&#x7528; iptables &#x89C4;&#x5219;&#x3002;</p>
 <p>&#x67E5;&#x770B; kube-proxy &#x7684;&#x542F;&#x52A8;&#x65E5;&#x5FD7;&#xFF0C;&#x8FD9;&#x91CC;&#x9ED8;&#x8BA4;&#x4F7F;&#x7528;&#x7684;&#x662F; iptables &#x4EE3;&#x7406;&#x6A21;&#x578B;&#x3002;</p>
-<pre class="language-"><code class="lang-shell"><span class="token punctuation">[</span>root@k8s-master ~<span class="token punctuation">]</span>$ kubectl logs -f kube-proxy-hjxcq -n kube-system 
+<pre class="language-"><code class="lang-bash"><span class="token punctuation">[</span>root@k8s-master ~<span class="token punctuation">]</span>$ kubectl logs -f kube-proxy-hjxcq -n kube-system 
 <span class="token punctuation">..</span>.
 I0323 03:36:31.452070       <span class="token number">1</span> node.go:172<span class="token punctuation">]</span> Successfully retrieved node IP: <span class="token number">10.10</span>.110.192
 I0323 03:36:31.452837       <span class="token number">1</span> server_others.go:142<span class="token punctuation">]</span> kube-proxy node IP is an IPv4 address <span class="token punctuation">(</span><span class="token number">10.10</span>.110.192<span class="token punctuation">)</span>, assume IPv4 operation
@@ -580,17 +580,17 @@ I0323 03:36:31.580249       <span class="token number">1</span> server.go:650<sp
 <span class="token punctuation">..</span>.
 </code></pre>
 <p>&#x5728;&#x6240;&#x6709; Kubernetes &#x8282;&#x70B9;&#x5F00;&#x542F; ipvs &#x652F;&#x6301;&#x3002;</p>
-<pre class="language-"><code class="lang-shell">modprobe -- ip_vs
+<pre class="language-"><code class="lang-bash">modprobe -- ip_vs
 modprobe -- ip_vs_rr
 modprobe -- ip_vs_wrr
 modprobe -- ip_vs_sh
 modprobe -- nf_conntrack_ipv4
 </code></pre>
 <p>&#x67E5;&#x770B;&#x5185;&#x6838;&#x6A21;&#x5757;&#x662F;&#x5426;&#x52A0;&#x8F7D;&#x3002;</p>
-<pre class="language-"><code class="lang-shell">lsmod <span class="token operator">|</span> <span class="token function">grep</span> ip_vs
+<pre class="language-"><code class="lang-bash">lsmod <span class="token operator">|</span> <span class="token function">grep</span> ip_vs
 </code></pre>
 <p>&#x4FEE;&#x6539; ConfigMap &#x7684; kube-system/kube-proxy &#x7684;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x4E3A; ipvs&#x3002;</p>
-<pre class="language-"><code class="lang-shell">kubectl edit configmaps kube-proxy -n kube-system
+<pre class="language-"><code class="lang-bash">kubectl edit configmaps kube-proxy -n kube-system
 <span class="token punctuation">..</span>.
 ipvs:      
       excludeCIDRs: null
@@ -607,10 +607,10 @@ ipvs:
 <span class="token punctuation">..</span>.
 </code></pre>
 <p>&#x5220;&#x9664;&#x6240;&#x6709; kube-proxy &#x7684; pod&#x3002;</p>
-<pre class="language-"><code class="lang-shell">kubectl get pod -n kube-system <span class="token operator">|</span> <span class="token function">grep</span> <span class="token string">&apos;kube-proxy&apos;</span> <span class="token operator">|</span> <span class="token function">awk</span> <span class="token string">&apos;{print $1}&apos;</span> <span class="token operator">|</span> <span class="token function">xargs</span> -I <span class="token punctuation">{</span><span class="token punctuation">}</span> kubectl delete pod <span class="token punctuation">{</span><span class="token punctuation">}</span> -n kube-system
+<pre class="language-"><code class="lang-bash">kubectl get pod -n kube-system <span class="token operator">|</span> <span class="token function">grep</span> <span class="token string">&apos;kube-proxy&apos;</span> <span class="token operator">|</span> <span class="token function">awk</span> <span class="token string">&apos;{print $1}&apos;</span> <span class="token operator">|</span> <span class="token function">xargs</span> -I <span class="token punctuation">{</span><span class="token punctuation">}</span> kubectl delete pod <span class="token punctuation">{</span><span class="token punctuation">}</span> -n kube-system
 </code></pre>
 <p>&#x518D;&#x6B21;&#x67E5;&#x770B; kube-proxy &#x7684;&#x65E5;&#x5FD7;&#x3002;</p>
-<pre class="language-"><code class="lang-shell"><span class="token punctuation">[</span>root@k8s-master ~<span class="token punctuation">]</span>$ kubectl logs -f kube-proxy-pnglg -n kube-system 
+<pre class="language-"><code class="lang-bash"><span class="token punctuation">[</span>root@k8s-master ~<span class="token punctuation">]</span>$ kubectl logs -f kube-proxy-pnglg -n kube-system 
 <span class="token punctuation">..</span>.
 I0410 09:05:52.455879       <span class="token number">1</span> node.go:172<span class="token punctuation">]</span> Successfully retrieved node IP: <span class="token number">10.10</span>.110.192
 I0410 09:05:52.459403       <span class="token number">1</span> server_others.go:142<span class="token punctuation">]</span> kube-proxy node IP is an IPv4 address <span class="token punctuation">(</span><span class="token number">10.10</span>.110.192<span class="token punctuation">)</span>, assume IPv4 operation
@@ -620,7 +620,7 @@ I0410 09:05:52.608073       <span class="token number">1</span> server.go:650<sp
 <span class="token punctuation">..</span>.
 </code></pre>
 <p>&#x67E5;&#x770B; ipvs &#x76F8;&#x5173;&#x89C4;&#x5219;&#x3002;</p>
-<pre class="language-"><code class="lang-shell"><span class="token function">apt</span> <span class="token function">install</span> -y ipvsadm 
+<pre class="language-"><code class="lang-bash"><span class="token function">apt</span> <span class="token function">install</span> -y ipvsadm 
 
 <span class="token punctuation">[</span>root@k8s-master ~<span class="token punctuation">]</span>$ ipvsadm -Ln
 IP Virtual Server version <span class="token number">1.2</span>.1 <span class="token punctuation">(</span>size<span class="token operator">=</span><span class="token number">4096</span><span class="token punctuation">)</span>
@@ -652,7 +652,7 @@ UDP  <span class="token number">10.96</span>.0.10:53 rr
   -<span class="token operator">&gt;</span> <span class="token number">10.244</span>.169.160:53            Masq    <span class="token number">1</span>      <span class="token number">0</span>          <span class="token number">0</span>
 </code></pre>
 <footer class="page-footer"><span class="copyright">Copyright &#xA9; &#x8352;&#x539F;&#x996E;&#x9732; 2019 all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">&#x8BE5;&#x6587;&#x4EF6;&#x4FEE;&#x8BA2;&#x65F6;&#x95F4;&#xFF1A;
-2021-12-01 17:07:17
+2021-12-17 16:09:29
 </span></footer>
                                 
                                 </section>
@@ -680,7 +680,7 @@ UDP  <span class="token number">10.96</span>.0.10:53 rr
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Service资源","level":"1.6","depth":1,"next":{"title":"Ingress","level":"1.7","depth":1,"path":"worknote/kubernetes/ingress.md","ref":"worknote/kubernetes/ingress.md","articles":[]},"previous":{"title":"工作负载资源使用","level":"1.5","depth":1,"path":"worknote/kubernetes/workload-resources.md","ref":"worknote/kubernetes/workload-resources.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-lunr","-search","-highlight","-sharing","disqus","prism","prism-themes","advanced-emoji","github","splitter","tbfed-pagefooter","anchors","anchor-navigation-ex@0.1.8","alerts","toggle-chapters"],"root":".","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright &copy 荒原饮露 2019","modify_label":"该文件修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"chapter-fold":{},"prism":{"css":["prism-themes/themes/prism-lucario.css"]},"disqus":{"useIdentifier":false,"shortName":"hercules-gitbook"},"github":{"url":"https://github.com/MF-ReStart/mf-restart.github.io"},"splitter":{},"fontsettings":{"theme":"white","family":"sans","size":2},"anchor-navigation-ex":{"isRewritePageTitle":true,"isShowTocTitleIcon":true,"tocLevel1Icon":"fa fa-hand-o-right","tocLevel2Icon":"fa fa-hand-o-right","tocLevel3Icon":"fa fa-hand-o-right"},"prism-themes":{},"alerts":{},"advanced-emoji":{"embedEmojis":false},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":true},"anchors":{},"toggle-chapters":{}},"theme":"default","author":"荒原饮露","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"荒原饮露的笔记","language":"zh-hans","links":{"sidebar":{"Home":"https://www.missf.top"}},"gitbook":"3.2.3","description":"记录工作和生活"},"file":{"path":"worknote/kubernetes/service-resources.md","mtime":"2021-12-01T09:07:17.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-12-17T07:56:56.762Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Service资源","level":"1.6","depth":1,"next":{"title":"Ingress","level":"1.7","depth":1,"path":"worknote/kubernetes/ingress.md","ref":"worknote/kubernetes/ingress.md","articles":[]},"previous":{"title":"工作负载资源使用","level":"1.5","depth":1,"path":"worknote/kubernetes/workload-resources.md","ref":"worknote/kubernetes/workload-resources.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-lunr","-search","-highlight","-sharing","disqus","prism","prism-themes","advanced-emoji","github","splitter","tbfed-pagefooter","anchors","anchor-navigation-ex@0.1.8","alerts","toggle-chapters"],"root":".","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright &copy 荒原饮露 2019","modify_label":"该文件修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"chapter-fold":{},"prism":{"css":["prism-themes/themes/prism-lucario.css"]},"disqus":{"useIdentifier":false,"shortName":"hercules-gitbook"},"github":{"url":"https://github.com/MF-ReStart/mf-restart.github.io"},"splitter":{},"fontsettings":{"theme":"white","family":"sans","size":2},"anchor-navigation-ex":{"isRewritePageTitle":true,"isShowTocTitleIcon":true,"tocLevel1Icon":"fa fa-hand-o-right","tocLevel2Icon":"fa fa-hand-o-right","tocLevel3Icon":"fa fa-hand-o-right"},"prism-themes":{},"alerts":{},"advanced-emoji":{"embedEmojis":false},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":true},"anchors":{},"toggle-chapters":{}},"theme":"default","author":"荒原饮露","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"荒原饮露的笔记","language":"zh-hans","links":{"sidebar":{"Home":"https://www.missf.top"}},"gitbook":"3.2.3","description":"记录工作和生活"},"file":{"path":"worknote/kubernetes/service-resources.md","mtime":"2021-12-17T08:09:29.377Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-12-17T08:13:56.960Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>
