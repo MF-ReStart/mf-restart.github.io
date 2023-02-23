@@ -566,36 +566,36 @@
 <h2 id="ddl-&#x6570;&#x636E;&#x5E93;&#x64CD;&#x4F5C;"><a name="ddl-&#x6570;&#x636E;&#x5E93;&#x64CD;&#x4F5C;" class="anchor-navigation-ex-anchor" href="#ddl-&#x6570;&#x636E;&#x5E93;&#x64CD;&#x4F5C;"><i class="fa fa-link" aria-hidden="true"></i></a>1.3. DDL &#x6570;&#x636E;&#x5E93;&#x64CD;&#x4F5C;</h2>
 <h3 id="&#x67E5;&#x8BE2;"><a name="&#x67E5;&#x8BE2;" class="anchor-navigation-ex-anchor" href="#&#x67E5;&#x8BE2;"><i class="fa fa-link" aria-hidden="true"></i></a>1.3.1. &#x67E5;&#x8BE2;</h3>
 <p>&#x67E5;&#x770B;&#x6240;&#x6709;&#x6570;&#x636E;&#x5E93;&#x3002;</p>
-<pre class="language-"><code class="lang-mysql">show databases;
+<pre class="language-"><code class="lang-sql"><span class="token keyword">show</span> <span class="token keyword">databases</span><span class="token punctuation">;</span>
 </code></pre>
 <p>&#x67E5;&#x8BE2;&#x5F53;&#x524D;&#x6240;&#x5728;&#x6570;&#x636E;&#x5E93;&#x3002;</p>
-<pre class="language-"><code class="lang-mysql">select database();
+<pre class="language-"><code class="lang-sql"><span class="token keyword">select</span> <span class="token keyword">database</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 </code></pre>
 <h3 id="&#x521B;&#x5EFA;"><a name="&#x521B;&#x5EFA;" class="anchor-navigation-ex-anchor" href="#&#x521B;&#x5EFA;"><i class="fa fa-link" aria-hidden="true"></i></a>1.3.2. &#x521B;&#x5EFA;</h3>
 <p>&#x521B;&#x5EFA;&#x6570;&#x636E;&#x5E93;&#x3002;</p>
-<pre class="language-"><code class="lang-mysql">create database if not exists test_db default character set utf8mb4 default collate utf8mb4_general_ci;
+<pre class="language-"><code class="lang-sql"><span class="token keyword">create</span> <span class="token keyword">database</span> <span class="token keyword">if</span> <span class="token operator">not</span> <span class="token keyword">exists</span> test_db <span class="token keyword">default</span> <span class="token keyword">character</span> <span class="token keyword">set</span> utf8mb4 <span class="token keyword">default</span> <span class="token keyword">collate</span> utf8mb4_general_ci<span class="token punctuation">;</span>
 </code></pre>
 <h3 id="&#x5220;&#x9664;"><a name="&#x5220;&#x9664;" class="anchor-navigation-ex-anchor" href="#&#x5220;&#x9664;"><i class="fa fa-link" aria-hidden="true"></i></a>1.3.3. &#x5220;&#x9664;</h3>
 <p>&#x5220;&#x9664;&#x6570;&#x636E;&#x5E93;&#x3002;</p>
-<pre class="language-"><code class="lang-mysql">drop database if exists test_db;
+<pre class="language-"><code class="lang-sql"><span class="token keyword">drop</span> <span class="token keyword">database</span> <span class="token keyword">if</span> <span class="token keyword">exists</span> test_db<span class="token punctuation">;</span>
 </code></pre>
 <h3 id="&#x4F7F;&#x7528;"><a name="&#x4F7F;&#x7528;" class="anchor-navigation-ex-anchor" href="#&#x4F7F;&#x7528;"><i class="fa fa-link" aria-hidden="true"></i></a>1.3.4. &#x4F7F;&#x7528;</h3>
 <p>&#x5207;&#x6362;&#x6570;&#x636E;&#x5E93;&#x3002;</p>
-<pre class="language-"><code class="lang-mysql">use test_db;
+<pre class="language-"><code class="lang-sql"><span class="token keyword">use</span> test_db<span class="token punctuation">;</span>
 </code></pre>
 <h2 id="ddl-&#x8868;&#x64CD;&#x4F5C;"><a name="ddl-&#x8868;&#x64CD;&#x4F5C;" class="anchor-navigation-ex-anchor" href="#ddl-&#x8868;&#x64CD;&#x4F5C;"><i class="fa fa-link" aria-hidden="true"></i></a>1.4. DDL &#x8868;&#x64CD;&#x4F5C;</h2>
 <h3 id="&#x67E5;&#x8BE2;"><a name="&#x67E5;&#x8BE2;" class="anchor-navigation-ex-anchor" href="#&#x67E5;&#x8BE2;"><i class="fa fa-link" aria-hidden="true"></i></a>1.4.1. &#x67E5;&#x8BE2;</h3>
 <p>&#x67E5;&#x8BE2;&#x5F53;&#x524D;&#x6570;&#x636E;&#x5E93;&#x6240;&#x6709;&#x8868;&#x3002;</p>
-<pre class="language-"><code class="lang-mysql">show tables;
+<pre class="language-"><code class="lang-sql"><span class="token keyword">show</span> <span class="token keyword">tables</span><span class="token punctuation">;</span>
 </code></pre>
 <p>&#x67E5;&#x8BE2;&#x8868;&#x7ED3;&#x6784;&#x3002;</p>
-<pre class="language-"><code class="lang-mysql">desc tablename;
+<pre class="language-"><code class="lang-sql"><span class="token keyword">desc</span> tablename<span class="token punctuation">;</span>
 </code></pre>
 <p>&#x67E5;&#x8BE2;&#x5EFA;&#x8868;&#x8BED;&#x53E5;&#x3002;</p>
-<pre class="language-"><code class="lang-mysql">show create table user;
+<pre class="language-"><code class="lang-sql"><span class="token keyword">show</span> <span class="token keyword">create</span> <span class="token keyword">table</span> <span class="token keyword">user</span><span class="token punctuation">;</span>
 </code></pre>
 <footer class="page-footer"><span class="copyright">Copyright &#xA9; &#x8352;&#x539F;&#x996E;&#x9732; 2019 all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">&#x8BE5;&#x6587;&#x4EF6;&#x4FEE;&#x8BA2;&#x65F6;&#x95F4;&#xFF1A;
-2023-02-09 10:50:13
+2023-02-23 10:27:50
 </span></footer>
                                 
                                 </section>
@@ -623,7 +623,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"基础","level":"3.1","depth":1,"next":{"title":"我在人间装逼的日子","level":"1","depth":0,"path":"life/pretend.md","ref":"life/pretend.md","articles":[]},"previous":{"title":"MySql","level":"3","depth":0,"path":"worknote/mysql/readme.md","ref":"worknote/mysql/readme.md","articles":[{"title":"基础","level":"3.1","depth":1,"path":"worknote/mysql/mysql-base.md","ref":"worknote/mysql/mysql-base.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["-lunr","-search","-highlight","-sharing","disqus","prism","prism-themes","advanced-emoji","github","splitter","tbfed-pagefooter","anchors","anchor-navigation-ex@0.1.8","alerts","toggle-chapters"],"root":".","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright &copy 荒原饮露 2019","modify_label":"该文件修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"chapter-fold":{},"prism":{"css":["prism-themes/themes/prism-lucario.css"]},"disqus":{"useIdentifier":false,"shortName":"hercules-gitbook"},"github":{"url":"https://github.com/MF-ReStart/mf-restart.github.io"},"splitter":{},"fontsettings":{"theme":"white","family":"sans","size":2},"anchor-navigation-ex":{"isRewritePageTitle":true,"isShowTocTitleIcon":true,"tocLevel1Icon":"fa fa-hand-o-right","tocLevel2Icon":"fa fa-hand-o-right","tocLevel3Icon":"fa fa-hand-o-right"},"prism-themes":{},"alerts":{},"advanced-emoji":{"embedEmojis":false},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":true},"anchors":{},"toggle-chapters":{}},"theme":"default","author":"荒原饮露","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"荒原饮露的笔记","language":"zh-hans","links":{"sidebar":{"Home":"https://mf-restart.github.io/"}},"gitbook":"3.2.3","description":"记录工作和生活"},"file":{"path":"worknote/mysql/mysql-base.md","mtime":"2023-02-09T02:50:13.198Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2023-02-23T02:26:43.049Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"基础","level":"3.1","depth":1,"next":{"title":"我在人间装逼的日子","level":"1","depth":0,"path":"life/pretend.md","ref":"life/pretend.md","articles":[]},"previous":{"title":"MySql","level":"3","depth":0,"path":"worknote/mysql/readme.md","ref":"worknote/mysql/readme.md","articles":[{"title":"基础","level":"3.1","depth":1,"path":"worknote/mysql/mysql-base.md","ref":"worknote/mysql/mysql-base.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["-lunr","-search","-highlight","-sharing","disqus","prism","prism-themes","advanced-emoji","github","splitter","tbfed-pagefooter","anchors","anchor-navigation-ex@0.1.8","alerts","toggle-chapters"],"root":".","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright &copy 荒原饮露 2019","modify_label":"该文件修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"chapter-fold":{},"prism":{"css":["prism-themes/themes/prism-lucario.css"]},"disqus":{"useIdentifier":false,"shortName":"hercules-gitbook"},"github":{"url":"https://github.com/MF-ReStart/mf-restart.github.io"},"splitter":{},"fontsettings":{"theme":"white","family":"sans","size":2},"anchor-navigation-ex":{"isRewritePageTitle":true,"isShowTocTitleIcon":true,"tocLevel1Icon":"fa fa-hand-o-right","tocLevel2Icon":"fa fa-hand-o-right","tocLevel3Icon":"fa fa-hand-o-right"},"prism-themes":{},"alerts":{},"advanced-emoji":{"embedEmojis":false},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":true},"anchors":{},"toggle-chapters":{}},"theme":"default","author":"荒原饮露","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"荒原饮露的笔记","language":"zh-hans","links":{"sidebar":{"Home":"https://mf-restart.github.io/"}},"gitbook":"3.2.3","description":"记录工作和生活"},"file":{"path":"worknote/mysql/mysql-base.md","mtime":"2023-02-23T02:27:50.168Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2023-02-23T02:29:30.314Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>
