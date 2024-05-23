@@ -1,0 +1,947 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>镜像和容器 · 荒原饮露的笔记</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="荒原饮露">
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-disqus/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-prism/prism-lucario.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-advanced-emoji/emoji-website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-tbfed-pagefooter/footer.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-anchors/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-alerts/style.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-toggle-chapters/toggle.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="data-persistence.html" />
+    
+    
+    <link rel="prev" href="install.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="https://mf-restart.github.io/" target="_blank" class="custom-link">Home</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        <li class="header">简介</li>
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                        <b>1.1.</b>
+                    
+                    introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">工作笔记</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="../kubernetes/readme.html">
+            
+                <a href="../kubernetes/readme.html">
+            
+                    
+                        <b>2.1.</b>
+                    
+                    Kubernetes
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.1" data-path="../kubernetes/overview.html">
+            
+                <a href="../kubernetes/overview.html">
+            
+                    
+                        <b>2.1.1.</b>
+                    
+                    概述
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.2" data-path="../kubernetes/deployment-kubernetes-cluster.html">
+            
+                <a href="../kubernetes/deployment-kubernetes-cluster.html">
+            
+                    
+                        <b>2.1.2.</b>
+                    
+                    部署Kubernetes集群
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.3" data-path="../kubernetes/kubelet-overview.html">
+            
+                <a href="../kubernetes/kubelet-overview.html">
+            
+                    
+                        <b>2.1.3.</b>
+                    
+                    Kubelet概述
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.4" data-path="../kubernetes/object-resource-format.html">
+            
+                <a href="../kubernetes/object-resource-format.html">
+            
+                    
+                        <b>2.1.4.</b>
+                    
+                    对象类资源格式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.5" data-path="../kubernetes/workload-resources.html">
+            
+                <a href="../kubernetes/workload-resources.html">
+            
+                    
+                        <b>2.1.5.</b>
+                    
+                    工作负载资源使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.6" data-path="../kubernetes/service-resources.html">
+            
+                <a href="../kubernetes/service-resources.html">
+            
+                    
+                        <b>2.1.6.</b>
+                    
+                    Service资源
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.7" data-path="../kubernetes/ingress.html">
+            
+                <a href="../kubernetes/ingress.html">
+            
+                    
+                        <b>2.1.7.</b>
+                    
+                    Ingress
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.8" data-path="../kubernetes/storage.html">
+            
+                <a href="../kubernetes/storage.html">
+            
+                    
+                        <b>2.1.8.</b>
+                    
+                    存储
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.9" data-path="../kubernetes/configuration.html">
+            
+                <a href="../kubernetes/configuration.html">
+            
+                    
+                        <b>2.1.9.</b>
+                    
+                    配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.10" data-path="../kubernetes/statefulset.html">
+            
+                <a href="../kubernetes/statefulset.html">
+            
+                    
+                        <b>2.1.10.</b>
+                    
+                    StatefulSet
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.11" data-path="../kubernetes/certification-authorization-access-control.html">
+            
+                <a href="../kubernetes/certification-authorization-access-control.html">
+            
+                    
+                        <b>2.1.11.</b>
+                    
+                    认证授权与准入控制
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="readme.html">
+            
+                <a href="readme.html">
+            
+                    
+                        <b>2.2.</b>
+                    
+                    Docker
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.2.1" data-path="overview.html">
+            
+                <a href="overview.html">
+            
+                    
+                        <b>2.2.1.</b>
+                    
+                    概述
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.2" data-path="install.html">
+            
+                <a href="install.html">
+            
+                    
+                        <b>2.2.2.</b>
+                    
+                    安装
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="2.2.3" data-path="images-and-containers.html">
+            
+                <a href="images-and-containers.html">
+            
+                    
+                        <b>2.2.3.</b>
+                    
+                    镜像和容器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.4" data-path="data-persistence.html">
+            
+                <a href="data-persistence.html">
+            
+                    
+                        <b>2.2.4.</b>
+                    
+                    数据持久化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.5" data-path="network.html">
+            
+                <a href="network.html">
+            
+                    
+                        <b>2.2.5.</b>
+                    
+                    网络
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.6" data-path="dockerfile.html">
+            
+                <a href="dockerfile.html">
+            
+                    
+                        <b>2.2.6.</b>
+                    
+                    Dockerfile
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="../mysql/readme.html">
+            
+                <a href="../mysql/readme.html">
+            
+                    
+                        <b>2.3.</b>
+                    
+                    MySql
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.3.1" data-path="../mysql/mysql-base.md">
+            
+                <span>
+            
+                    
+                        <b>2.3.1.</b>
+                    
+                    基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="header">生活笔记</li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="../../life/pretend.html">
+            
+                <a href="../../life/pretend.html">
+            
+                    
+                        <b>3.1.</b>
+                    
+                    我在人间装逼的日子
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >镜像和容器</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+                                <section class="normal markdown-section">
+                                
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-anchor"></i><ul><li><a href="#&#x955C;&#x50CF;&#x548C;&#x5BB9;&#x5668;">1. &#x955C;&#x50CF;&#x548C;&#x5BB9;&#x5668;</a></li><ul><li><a href="#&#x955C;&#x50CF;&#x4F9D;&#x8D56;&#x6280;&#x672F;">1.1. &#x955C;&#x50CF;&#x4F9D;&#x8D56;&#x6280;&#x672F;</a></li><li><a href="#&#x5BB9;&#x5668;&#x4F9D;&#x8D56;&#x6280;&#x672F;">1.2. &#x5BB9;&#x5668;&#x4F9D;&#x8D56;&#x6280;&#x672F;</a></li><li><a href="#&#x955C;&#x50CF;&#x548C;&#x5BB9;&#x5668;&#x7684;&#x64CD;&#x4F5C;">1.3. &#x955C;&#x50CF;&#x548C;&#x5BB9;&#x5668;&#x7684;&#x64CD;&#x4F5C;</a></li><ul><li><a href="#&#x914D;&#x7F6E;&#x955C;&#x50CF;&#x52A0;&#x901F;">1.3.1. &#x914D;&#x7F6E;&#x955C;&#x50CF;&#x52A0;&#x901F;</a></li><li><a href="#&#x4E0B;&#x8F7D;&#x955C;&#x50CF;">1.3.2. &#x4E0B;&#x8F7D;&#x955C;&#x50CF;</a></li><li><a href="#&#x67E5;&#x770B;&#x955C;&#x50CF;">1.3.3. &#x67E5;&#x770B;&#x955C;&#x50CF;</a></li><li><a href="#&#x542F;&#x52A8;&#x5BB9;&#x5668;">1.3.4. &#x542F;&#x52A8;&#x5BB9;&#x5668;</a></li><li><a href="#&#x8FDB;&#x5165;&#x5BB9;&#x5668;">1.3.5. &#x8FDB;&#x5165;&#x5BB9;&#x5668;</a></li><li><a href="#&#x505C;&#x6B62;&#x5BB9;&#x5668;">1.3.6. &#x505C;&#x6B62;&#x5BB9;&#x5668;</a></li><li><a href="#&#x5220;&#x9664;&#x5BB9;&#x5668;">1.3.7. &#x5220;&#x9664;&#x5BB9;&#x5668;</a></li><li><a href="#&#x5220;&#x9664;&#x955C;&#x50CF;">1.3.8. &#x5220;&#x9664;&#x955C;&#x50CF;</a></li><li><a href="#&#x5907;&#x4EFD;&#x8FC1;&#x79FB;">1.3.9. &#x5907;&#x4EFD;&#x8FC1;&#x79FB;</a></li><li><a href="#&#x5BB9;&#x5668;&#x65E5;&#x5FD7;">1.3.10. &#x5BB9;&#x5668;&#x65E5;&#x5FD7;</a></li><li><a href="#&#x8D44;&#x6E90;&#x63A7;&#x5236;">1.3.11. &#x8D44;&#x6E90;&#x63A7;&#x5236;</a></li></ul></ul></ul></div><a href="#&#x955C;&#x50CF;&#x548C;&#x5BB9;&#x5668;" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="&#x955C;&#x50CF;&#x548C;&#x5BB9;&#x5668;"><a name="&#x955C;&#x50CF;&#x548C;&#x5BB9;&#x5668;" class="anchor-navigation-ex-anchor" href="#&#x955C;&#x50CF;&#x548C;&#x5BB9;&#x5668;"><i class="fa fa-link" aria-hidden="true"></i></a>1. &#x955C;&#x50CF;&#x548C;&#x5BB9;&#x5668;</h1>
+<h2 id="&#x955C;&#x50CF;&#x4F9D;&#x8D56;&#x6280;&#x672F;"><a name="&#x955C;&#x50CF;&#x4F9D;&#x8D56;&#x6280;&#x672F;" class="anchor-navigation-ex-anchor" href="#&#x955C;&#x50CF;&#x4F9D;&#x8D56;&#x6280;&#x672F;"><i class="fa fa-link" aria-hidden="true"></i></a>1.1. &#x955C;&#x50CF;&#x4F9D;&#x8D56;&#x6280;&#x672F;</h2>
+<p>&#x955C;&#x50CF;&#x76F8;&#x5F53;&#x4E8E;&#x662F;&#x4E00;&#x4E2A; root &#x6587;&#x4EF6;&#x7CFB;&#x7EDF;&#xFF0C;&#x9664;&#x4E86;&#x63D0;&#x4F9B;&#x5BB9;&#x5668;&#x8FD0;&#x884C;&#x65F6;&#x6240;&#x9700;&#x7684;&#x7A0B;&#x5E8F;&#x3001;&#x5E93;&#x3001;&#x8D44;&#x6E90;&#x3001;&#x914D;&#x7F6E;&#x7B49;&#x6587;&#x4EF6;&#x5916;&#xFF0C;&#x8FD8;&#x5305;&#x542B;&#x4E00;&#x4E9B;&#x4E3A;&#x8FD0;&#x884C;&#x65F6;&#x51C6;&#x5907;&#x7684;&#x914D;&#x7F6E;&#x53C2;&#x6570;&#xFF1A;&#x4F8B;&#x5982;&#x533F;&#x540D;&#x5377;&#x3001;&#x73AF;&#x5883;&#x53D8;&#x91CF;&#x3001;&#x7528;&#x6237;&#x7B49;&#x3002;&#x955C;&#x50CF;&#x4E0D;&#x5305;&#x542B;&#x4EFB;&#x4F55;&#x52A8;&#x6001;&#x7684;&#x6570;&#x636E;&#xFF0C;&#x955C;&#x50CF;&#x5185;&#x5BB9;&#x5728;&#x5176;&#x6784;&#x5EFA;&#x4E4B;&#x540E;&#x5C31;&#x4E0D;&#x4F1A;&#x88AB;&#x6539;&#x53D8;&#x3002;&#x4E00;&#x4E2A;&#x955C;&#x50CF;&#x53EF;&#x4EE5;&#x88AB;&#x91CD;&#x590D;&#x4F7F;&#x7528;&#x591A;&#x6B21;&#xFF0C;&#x521B;&#x5EFA;&#x65E0;&#x6570;&#x4E2A;&#x76F8;&#x540C;&#x7684;&#x5BB9;&#x5668;&#xFF0C;&#x6240;&#x4EE5;&#x6211;&#x4EEC;&#x5728;&#x524D;&#x9762;&#x8BF4;&#x955C;&#x50CF;&#x662F;&#x5E26;&#x6709;&#x521B;&#x5EFA; Docker &#x5BB9;&#x5668;&#x547D;&#x4EE4;&#x8BF4;&#x660E;&#x7684;&#x53EA;&#x8BFB;&#x6A21;&#x677F;&#x3002;&#x955C;&#x50CF;&#x8FD8;&#x53EF;&#x4EE5;&#x662F;&#x4E00;&#x79CD;&#x6807;&#x51C6;&#x5316;&#x7684;&#x8F6F;&#x4EF6;&#x4EA4;&#x4ED8;&#x65B9;&#x5F0F;&#xFF0C;&#x955C;&#x50CF;&#x5185;&#x5305;&#x542B;&#x57FA;&#x7840;&#x8FD0;&#x884C;&#x73AF;&#x5883;&#x548C;&#x7A0B;&#x5E8F;&#x4EE3;&#x7801;&#x3002;</p>
+<p>&#x955C;&#x50CF;&#x7684;&#x5206;&#x5C42;&#x4F9D;&#x8D56;&#x4E8E;&#x4E00;&#x7CFB;&#x5217;&#x7684;&#x5E95;&#x5C42;&#x6280;&#x672F;&#xFF0C;&#x4F8B;&#x5982;&#x8054;&#x5408;&#x6587;&#x4EF6;&#x7CFB;&#x7EDF;&#xFF08;Union FileSystem&#xFF09;&#x3001;&#x5199;&#x65F6;&#x590D;&#x5236;&#xFF08;copy no write&#xFF09;&#x3002;</p>
+<p><strong>&#x8054;&#x5408;&#x6587;&#x4EF6;&#x7CFB;&#x7EDF;&#xFF08;Union FileSystem&#xFF09;</strong></p>
+<p>&#x8054;&#x5408;&#x6587;&#x4EF6;&#x7CFB;&#x7EDF;&#x53EF;&#x4EE5;&#x5C06;&#x591A;&#x4E2A;&#x76EE;&#x5F55;&#xFF08;&#x4E5F;&#x79F0;&#x4E3A;&#x5206;&#x652F;&#xFF0C;&#x56E0;&#x4E3A;&#x8054;&#x5408;&#x6587;&#x4EF6;&#x7CFB;&#x7EDF;&#x652F;&#x6301;&#x5BF9;&#x6587;&#x4EF6;&#x7CFB;&#x7EDF;&#x7684;&#x4FEE;&#x6539;&#x4F5C;&#x4E3A;&#x4E00;&#x6B21;&#x63D0;&#x4EA4;&#x6765;&#x5C42;&#x5C42;&#x53E0;&#x52A0;&#xFF09;&#x7684;&#x5185;&#x5BB9;&#x8054;&#x5408;&#x6302;&#x8F7D;&#x5230;&#x4E00;&#x4E2A;&#x76EE;&#x5F55;&#x4E0B;&#xFF0C;&#x800C;&#x4E0D;&#x4FEE;&#x6539;&#x76EE;&#x5F55;&#x7684;&#x7269;&#x7406;&#x4F4D;&#x7F6E;&#x3002;&#x8054;&#x5408;&#x6587;&#x4EF6;&#x7CFB;&#x7EDF;&#x8FD8;&#x652F;&#x6301;&#x53EA;&#x8BFB;&#x548C;&#x53EF;&#x8BFB;&#x5199;&#x76EE;&#x5F55;&#x5171;&#x5B58;&#xFF0C;&#x8FD9;&#x662F;&#x5B9E;&#x73B0;&#x955C;&#x50CF;&#x62E5;&#x6709;&#x53EA;&#x8BFB;&#x5C42;&#x548C;&#x53EF;&#x8BFB;&#x5199;&#x5C42;&#x7684;&#x539F;&#x7406;&#x3002;&#x8054;&#x5408;&#x6587;&#x4EF6;&#x7CFB;&#x7EDF;&#x662F; Docker &#x955C;&#x50CF;&#x7684;&#x57FA;&#x77F3;&#xFF0C;&#x955C;&#x50CF;&#x7684;&#x5206;&#x5C42;&#x53EF;&#x4EE5;&#x8BA9;&#x4E0D;&#x540C;&#x5BB9;&#x5668;&#x4E4B;&#x95F4;&#x5171;&#x4EAB;&#x8D44;&#x6E90;&#x3002;&#x4F8B;&#x5982;&#x4E24;&#x4E2A;&#x4F7F;&#x7528; Ubuntu:20.04 &#x955C;&#x50CF;&#x521B;&#x5EFA;&#x7684;&#x5BB9;&#x5668;&#xFF0C;&#x4E00;&#x4E2A;&#x5BB9;&#x5668;&#x5B89;&#x88C5;&#x4E86; Nginx&#xFF0C;&#x53E6;&#x4E00;&#x4E2A;&#x5BB9;&#x5668;&#x5B89;&#x88C5;&#x4E86; Tomcat&#xFF0C;&#x90A3;&#x4E48;&#x8FD9;&#x4E24;&#x4E2A;&#x5BB9;&#x5668;&#x5176;&#x5B9E;&#x662F;&#x5171;&#x4EAB; Ubuntu:20.04 &#x955C;&#x50CF;&#x5C42;&#xFF0C;&#x53EA;&#x6709;&#x5B89;&#x88C5; Nginx &#x548C; Tomcat &#x7684;&#x90A3;&#x4E00;&#x5C42;&#x624D;&#x662F;&#x5B83;&#x4EEC;&#x81EA;&#x5DF1;&#x7684;&#x6539;&#x52A8;&#x5C42;&#xFF0C;&#x8054;&#x5408;&#x6587;&#x4EF6;&#x7CFB;&#x7EDF;&#x5728;&#x5B9E;&#x73B0;&#x8D44;&#x6E90;&#x5171;&#x4EAB;&#x7684;&#x540C;&#x65F6;&#x63D0;&#x9AD8;&#x4E86;&#x5B58;&#x50A8;&#x6548;&#x7387;&#x3002;</p>
+<p>Docker &#x76EE;&#x524D;&#x652F;&#x6301;&#x7684;&#x8054;&#x5408;&#x6587;&#x4EF6;&#x7CFB;&#x7EDF;&#x6709;&#xFF1A;overlay2&#x3001;overlay&#x3001;aufs&#x3001;btrfs&#x3001;vfs&#x3001;devicemapper&#x3002;</p>
+<p>aufs &#x662F; Docker &#x4EE5;&#x524D;&#x7248;&#x672C;&#x9ED8;&#x8BA4;&#x7684;&#x5B58;&#x50A8;&#x9A71;&#x52A8;&#xFF0C;&#x5982;&#x679C; Linux &#x5185;&#x6838;&#x662F; 4.0 &#x6216;&#x8005;&#x66F4;&#x9AD8;&#x7248;&#x672C;&#xFF0C;&#x5E76;&#x4E14;&#x4F7F;&#x7528; Docker Engine - Community&#xFF0C;&#x8BF7;&#x4F7F;&#x7528;&#x65B0;&#x7684; overlay2&#xFF0C;&#x5B83;&#x7684;&#x6027;&#x80FD;&#x6BD4; aufs &#x5B58;&#x50A8;&#x9A71;&#x52A8;&#x66F4;&#x597D;&#x3002;</p>
+<p><strong>&#x5199;&#x65F6;&#x590D;&#x5236;&#xFF08;copy no write&#xFF09;</strong></p>
+<p>&#x6211;&#x4EEC;&#x5DF2;&#x7ECF;&#x77E5;&#x9053; Docker &#x955C;&#x50CF;&#x662F;&#x7531;&#x591A;&#x4E2A;&#x53EA;&#x8BFB;&#x5C42;&#x53E0;&#x52A0;&#x6784;&#x5EFA;&#x7684;&#xFF0C;&#x90A3;&#x4E48;&#x5728;&#x542F;&#x52A8;&#x5BB9;&#x5668;&#x65F6;&#xFF0C;&#x6211;&#x4EEC;&#x5BF9;&#x5BB9;&#x5668;&#x7684;&#x64CD;&#x4F5C;&#x662F;&#x5982;&#x4F55;&#x88AB;&#x4FDD;&#x5B58;&#x7684;&#x5462;&#xFF1F;&#x5176;&#x5B9E;&#xFF0C;Docker &#x542F;&#x52A8;&#x65F6;&#x4F1A;&#x52A0;&#x8F7D;&#x955C;&#x50CF;&#x7684;&#x53EA;&#x8BFB;&#x5C42;&#x5E76;&#x5728;&#x955C;&#x50CF;&#x5C42;&#x7684;&#x9876;&#x90E8;&#x6DFB;&#x52A0;&#x4E00;&#x4E2A;&#x8BFB;&#x5199;&#x5C42;&#xFF0C;&#x5982;&#x679C;&#x6B64;&#x65F6;&#x5728;&#x5BB9;&#x5668;&#x4E2D;&#x4FEE;&#x6539;&#x4E86;&#x4E00;&#x4E2A;&#x5DF2;&#x5B58;&#x5728;&#x7684;&#x6587;&#x4EF6;&#xFF0C;&#x8BE5;&#x6587;&#x4EF6;&#x5C06;&#x4F1A;&#x4ECE;&#x8BFB;&#x5199;&#x5C42;&#x4E0B;&#x9762;&#x7684;&#x53EA;&#x8BFB;&#x5C42;&#x590D;&#x5236;&#x5230;&#x8BFB;&#x5199;&#x5C42;&#x5E76;&#x8FDB;&#x884C;&#x4FEE;&#x6539;&#xFF0C;&#x8BE5;&#x6587;&#x4EF6;&#x7684;&#x53EA;&#x8BFB;&#x7248;&#x672C;&#x4ECD;&#x7136;&#x5B58;&#x5728;&#xFF0C;&#x4F46;&#x662F;&#x5BB9;&#x5668;&#x5DF2;&#x7ECF;&#x65E0;&#x6CD5;&#x770B;&#x5230;&#x5B58;&#x5728;&#x4E8E;&#x4E0B;&#x5C42;&#x7684;&#x8FD9;&#x4E2A;&#x6587;&#x4EF6;&#x4E86;&#x3002;&#x53EA;&#x6709;&#x88AB;&#x4FEE;&#x6539;&#x7684;&#x6587;&#x4EF6;&#x624D;&#x4F1A;&#x88AB;&#x590D;&#x5236;&#x5230;&#x8BFB;&#x5199;&#x5C42;&#xFF0C;&#x5199;&#x65F6;&#x590D;&#x5236;&#x6700;&#x5927;&#x9650;&#x5EA6;&#x51CF;&#x5C11;&#x4E86; I/O &#x548C;&#x540E;&#x7EED;&#x5C42;&#x7684;&#x5927;&#x5C0F;&#x3002;</p>
+<h2 id="&#x5BB9;&#x5668;&#x4F9D;&#x8D56;&#x6280;&#x672F;"><a name="&#x5BB9;&#x5668;&#x4F9D;&#x8D56;&#x6280;&#x672F;" class="anchor-navigation-ex-anchor" href="#&#x5BB9;&#x5668;&#x4F9D;&#x8D56;&#x6280;&#x672F;"><i class="fa fa-link" aria-hidden="true"></i></a>1.2. &#x5BB9;&#x5668;&#x4F9D;&#x8D56;&#x6280;&#x672F;</h2>
+<p>&#x5728;&#x5BBF;&#x4E3B;&#x673A;&#x4E0A;&#x770B;&#xFF0C;&#x4E00;&#x4E2A;&#x5BB9;&#x5668;&#x5176;&#x5B9E;&#x5C31;&#x662F;&#x5BBF;&#x4E3B;&#x673A;&#x7684;&#x4E00;&#x4E2A;&#x8FDB;&#x7A0B;&#xFF0C;&#x4F46;&#x662F;&#x8FD9;&#x4E2A;&#x8FDB;&#x7A0B;&#x662F;&#x548C;&#x5BBF;&#x4E3B;&#x673A;&#x5B58;&#x5728;&#x9694;&#x79BB;&#x7684;&#x3002;&#x5BB9;&#x5668;&#x5185;&#x7684;&#x8FDB;&#x7A0B;&#x53EA;&#x80FD;&#x770B;&#x5230;&#x81EA;&#x5DF1; namespace &#x7684;&#x201C;&#x4E16;&#x754C;&#x201D;&#xFF0C;&#x4E0E;&#x5BBF;&#x4E3B;&#x673A;&#x4E0A;&#x7684;&#x5176;&#x4ED6;&#x8FDB;&#x7A0B;&#x4E92;&#x76F8;&#x65E0;&#x611F;&#x77E5;&#x3002;&#x4E3B;&#x8981;&#x662F;&#x4F7F;&#x7528;&#x4E86; Linux &#x5185;&#x6838;&#x5E95;&#x5C42;&#x7684; namespace &#x548C;  cgroup &#x6280;&#x672F;&#x3002;</p>
+<p><strong>Namespace &#x8D44;&#x6E90;&#x9694;&#x79BB;</strong></p>
+<p>namespace &#x662F; Linux &#x63D0;&#x4F9B;&#x7684;&#x4E00;&#x79CD;&#x7531;&#x5185;&#x6838;&#x5B9E;&#x73B0;&#x7684;&#x9694;&#x79BB;&#x6280;&#x672F;&#x3002;&#x662F;&#x5728; Unix &#x7684; chroot &#x7CFB;&#x7EDF;&#x8C03;&#x7528;&#xFF08;&#x901A;&#x8FC7;&#x4FEE;&#x6539;&#x6839;&#x76EE;&#x5F55;&#x628A;&#x7528;&#x6237;&#x76D1;&#x7981;&#x5728;&#x4E00;&#x4E2A;&#x7279;&#x5B9A;&#x76EE;&#x5F55;&#x4E0B;&#xFF09;&#x7684;&#x57FA;&#x7840;&#x4E0A;&#xFF0C;&#x5B9E;&#x73B0;&#x4E86;&#x516D;&#x79CD; namespace &#x9694;&#x79BB;&#x673A;&#x5236;&#x3002;</p>
+<table>
+<thead>
+<tr>
+<th>Namespace</th>
+<th>&#x7CFB;&#x7EDF;&#x8C03;&#x7528;&#x53C2;&#x6570;</th>
+<th>&#x9694;&#x79BB;&#x5185;&#x5BB9;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>UTS</td>
+<td>CLONE_NEWUTS</td>
+<td>&#x4E3B;&#x673A;&#x540D;&#x548C;&#x57DF;&#x540D;</td>
+</tr>
+<tr>
+<td>IPC</td>
+<td>CLONE_NEWIPC</td>
+<td>&#x5171;&#x4EAB;&#x5185;&#x5B58;&#x3001;&#x4FE1;&#x53F7;&#x91CF;&#x3001;&#x6D88;&#x606F;&#x961F;&#x5217;</td>
+</tr>
+<tr>
+<td>PID</td>
+<td>CLONE_NEWPID</td>
+<td>&#x8FDB;&#x7A0B;&#x53F7;</td>
+</tr>
+<tr>
+<td>Network</td>
+<td>CLONE_NEWNET</td>
+<td>&#x7F51;&#x7EDC;&#x8BBE;&#x5907;&#x3001;&#x7F51;&#x7EDC;&#x534F;&#x8BAE;&#x6808;&#x3001;&#x7AEF;&#x53E3;</td>
+</tr>
+<tr>
+<td>Mount</td>
+<td>CLONE_NEWNS</td>
+<td>&#x6587;&#x4EF6;&#x7CFB;&#x7EDF;&#x6302;&#x8F7D;&#x70B9;</td>
+</tr>
+<tr>
+<td>User</td>
+<td>CLONE_NEWUSER</td>
+<td>&#x7528;&#x6237;&#x548C;&#x7528;&#x6237;&#x7EC4;</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Cgroup &#x8D44;&#x6E90;&#x9650;&#x5236;</strong></p>
+<p>Cgroup&#xFF08;Control Group&#xFF09;&#x662F; Linux &#x5185;&#x6838;&#x7684;&#x4E00;&#x4E2A;&#x529F;&#x80FD;&#xFF0C;&#x7528;&#x6765;&#x9650;&#x5236;&#x3001;&#x63A7;&#x5236;&#x4E0E;&#x5206;&#x79BB;&#x4E00;&#x4E2A;&#x8FDB;&#x7A0B;&#x7EC4;&#x7FA4;&#x7684;&#x8D44;&#x6E90;&#xFF08;&#x4F8B;&#x5982; CPU&#x3001;&#x5185;&#x5B58;&#x3001;&#x78C1;&#x76D8; IO &#x7B49;&#xFF09;&#x3002;Cgroup &#x53EF;&#x4EE5;&#x4E3A;&#x7CFB;&#x7EDF;&#x4E2D;&#x8FD0;&#x884C;&#x7684;&#x8FDB;&#x7A0B;&#x5206;&#x914D;&#x8D44;&#x6E90;&#xFF0C;&#x62D2;&#x7EDD;&#x8FDB;&#x7A0B;&#x8BBF;&#x95EE;&#x67D0;&#x4E9B;&#x8D44;&#x6E90;&#xFF0C;&#x8FD8;&#x63D0;&#x4F9B; Cgroup &#x914D;&#x7F6E;&#x7684;&#x76D1;&#x63A7;&#x3002;</p>
+<p>Cgroup &#x7684;&#x4E3B;&#x8981;&#x4F5C;&#x7528;&#x6709;&#xFF1A;</p>
+<ul>
+<li>Resource limitation: &#x9650;&#x5236;&#x8D44;&#x6E90;&#x4F7F;&#x7528;&#xFF0C;&#x4F8B;&#x5982; CPU&#x3001;&#x5185;&#x5B58;&#x3001;&#x78C1;&#x76D8;&#x3002;</li>
+<li>Prioritization: &#x4F18;&#x5148;&#x7EA7;&#x63A7;&#x5236;&#xFF0C;&#x4E3A;&#x8FDB;&#x7A0B;&#x7EC4;&#x5206;&#x914D;&#x7279;&#x5B9A;&#x7684; CPU&#xFF08;&#x591A;&#x6838;&#xFF09; &#x6216;&#x8005;&#x78C1;&#x76D8; IO &#x541E;&#x5410;&#x3002;</li>
+<li>Accounting: &#x7EDF;&#x8BA1;&#x8D44;&#x6E90;&#x4F7F;&#x7528;&#x91CF;&#xFF0C;CPU &#x4F7F;&#x7528;&#x65F6;&#x95F4;&#x3001;&#x5185;&#x5B58;&#x4F7F;&#x7528;&#x91CF;&#x7B49;&#xFF0C;&#x6309;&#x91CF;&#x8BA1;&#x8D39;&#x975E;&#x5E38;&#x6709;&#x7528;&#x3002;</li>
+<li>Control: &#x8FDB;&#x7A0B;&#x7EC4;&#x63A7;&#x5236;&#xFF0C;&#x6302;&#x8D77;&#x6216;&#x8005;&#x6062;&#x590D;&#x6267;&#x884C;&#x8FDB;&#x7A0B;&#x3002;</li>
+</ul>
+<p>Cgroup &#x5B50;&#x7CFB;&#x7EDF;&#xFF1A;</p>
+<table>
+<thead>
+<tr>
+<th>Cgroup &#x5B50;&#x7CFB;&#x7EDF;</th>
+<th>&#x4F5C;&#x7528;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>blkio</td>
+<td>&#x4E3A;&#x5757;&#x8BBE;&#x5907;&#x8BBE;&#x5B9A; IO &#x9650;&#x5236;&#xFF0C;&#x4F8B;&#x5982;&#x78C1;&#x76D8;</td>
+</tr>
+<tr>
+<td>cpu</td>
+<td>&#x4F7F;&#x7528;&#x8C03;&#x5EA6;&#x7A0B;&#x5E8F;&#x63D0;&#x4F9B;&#x5BF9; CPU &#x7684; Cgroup &#x4EFB;&#x52A1;&#x8BBF;&#x95EE;</td>
+</tr>
+<tr>
+<td>cpuacct</td>
+<td>&#x81EA;&#x52A8;&#x751F;&#x6210; cgroup &#x4E2D;&#x4EFB;&#x52A1;&#x6240;&#x4F7F;&#x7528;&#x7684; CPU &#x62A5;&#x544A;</td>
+</tr>
+<tr>
+<td>cpuset</td>
+<td>&#x7ED9; Cgroup &#x4E2D;&#x7684;&#x4EFB;&#x52A1;&#x5206;&#x914D;&#x72EC;&#x7ACB; CPU&#xFF08;&#x591A;&#x6838;&#xFF09;&#x548C;&#x5185;&#x5B58;&#x8282;&#x70B9;</td>
+</tr>
+<tr>
+<td>memory</td>
+<td>&#x4E3A; Cgroup &#x4EFB;&#x52A1;&#x63D0;&#x4F9B;&#x5BF9; Memory &#x7684;&#x9650;&#x5236;</td>
+</tr>
+<tr>
+<td>freezer</td>
+<td>&#x6682;&#x505C;&#x548C;&#x6062;&#x590D; Cgroup &#x4EFB;&#x52A1;</td>
+</tr>
+<tr>
+<td>devices</td>
+<td>&#x5141;&#x8BB8;&#x6216;&#x62D2;&#x7EDD; Cgroup &#x4EFB;&#x52A1;&#x5BF9;&#x8BBE;&#x5907;&#x7684;&#x8BBF;&#x95EE;</td>
+</tr>
+<tr>
+<td>net_cls</td>
+<td>&#x6807;&#x8BB0;&#x7F51;&#x7EDC;&#x6570;&#x636E;&#x5305;&#xFF0C;&#x53EF;&#x5141;&#x8BB8; Linux &#x6D41;&#x91CF;&#x63A7;&#x5236;&#x7A0B;&#x5E8F;&#x8BC6;&#x522B;&#x4ECE;&#x5177;&#x4F53; Cgroup &#x4E2D;&#x751F;&#x6210;&#x7684;&#x6570;&#x636E;&#x5305;</td>
+</tr>
+<tr>
+<td>net_prio</td>
+<td>&#x8BBE;&#x8BA1;&#x7F51;&#x7EDC;&#x6D41;&#x91CF;&#x7684;&#x4F18;&#x5148;&#x7EA7;</td>
+</tr>
+<tr>
+<td>hugetlb</td>
+<td>&#x4E3B;&#x8981;&#x9488;&#x5BF9;&#x4E8E; HugeTLB &#x7CFB;&#x7EDF;&#x8FDB;&#x884C;&#x9650;&#x5236;&#xFF0C;&#x8FD9;&#x662F;&#x4E00;&#x4E2A;&#x5927;&#x9875;&#x6587;&#x4EF6;&#x7CFB;&#x7EDF;</td>
+</tr>
+</tbody>
+</table>
+<h2 id="&#x955C;&#x50CF;&#x548C;&#x5BB9;&#x5668;&#x7684;&#x64CD;&#x4F5C;"><a name="&#x955C;&#x50CF;&#x548C;&#x5BB9;&#x5668;&#x7684;&#x64CD;&#x4F5C;" class="anchor-navigation-ex-anchor" href="#&#x955C;&#x50CF;&#x548C;&#x5BB9;&#x5668;&#x7684;&#x64CD;&#x4F5C;"><i class="fa fa-link" aria-hidden="true"></i></a>1.3. &#x955C;&#x50CF;&#x548C;&#x5BB9;&#x5668;&#x7684;&#x64CD;&#x4F5C;</h2>
+<h3 id="&#x914D;&#x7F6E;&#x955C;&#x50CF;&#x52A0;&#x901F;"><a name="&#x914D;&#x7F6E;&#x955C;&#x50CF;&#x52A0;&#x901F;" class="anchor-navigation-ex-anchor" href="#&#x914D;&#x7F6E;&#x955C;&#x50CF;&#x52A0;&#x901F;"><i class="fa fa-link" aria-hidden="true"></i></a>1.3.1. &#x914D;&#x7F6E;&#x955C;&#x50CF;&#x52A0;&#x901F;</h3>
+<p>&#x6BCF;&#x4E00;&#x4E2A;&#x5F00;&#x901A;&#x4E86;&#x963F;&#x91CC;&#x4E91;&#x5BB9;&#x5668;&#x955C;&#x50CF;&#x670D;&#x52A1;&#x7684;&#x7528;&#x6237;&#xFF0C;&#x90FD;&#x4F1A;&#x6709;&#x4E00;&#x4E2A;&#x955C;&#x50CF;&#x52A0;&#x901F;&#x5730;&#x5740;&#x3002;</p>
+<pre class="language-"><code class="lang-bash"><span class="token punctuation">[</span>root@docker ~<span class="token punctuation">]</span><span class="token comment"># sudo tee /etc/docker/daemon.json &lt;&lt;-&apos;EOF&apos;</span>
+<span class="token punctuation">{</span>
+  <span class="token string">&quot;registry-mirrors&quot;</span><span class="token builtin class-name">:</span> <span class="token punctuation">[</span><span class="token string">&quot;https://265wemgl.mirror.aliyuncs.com&quot;</span><span class="token punctuation">]</span>
+<span class="token punctuation">}</span>
+EOF
+<span class="token punctuation">[</span>root@docker ~<span class="token punctuation">]</span><span class="token comment"># sudo systemctl daemon-reload</span>
+<span class="token punctuation">[</span>root@docker ~<span class="token punctuation">]</span><span class="token comment"># sudo systemctl restart docker</span>
+</code></pre>
+<h3 id="&#x4E0B;&#x8F7D;&#x955C;&#x50CF;"><a name="&#x4E0B;&#x8F7D;&#x955C;&#x50CF;" class="anchor-navigation-ex-anchor" href="#&#x4E0B;&#x8F7D;&#x955C;&#x50CF;"><i class="fa fa-link" aria-hidden="true"></i></a>1.3.2. &#x4E0B;&#x8F7D;&#x955C;&#x50CF;</h3>
+<p><a href="https://hub.docker.com/search?q=&amp;type=image" target="_blank">Docker Hub</a> &#x662F; Docker &#x5B98;&#x65B9;&#x63D0;&#x4F9B;&#x7684;&#x516C;&#x5171;&#x955C;&#x50CF;&#x4ED3;&#x5E93;&#xFF0C;&#x4F7F;&#x7528; docker pull &#x547D;&#x4EE4;&#x9ED8;&#x8BA4;&#x5C31;&#x662F;&#x4ECE;&#x8FD9;&#x4E2A;&#x4ED3;&#x5E93;&#x62C9;&#x53D6;&#x955C;&#x50CF;&#x3002;&#x62C9;&#x53D6;&#x955C;&#x50CF;&#x7684;&#x547D;&#x4EE4;&#x683C;&#x5F0F;&#x5982;&#x4E0B;&#xFF1A;</p>
+<pre class="language-"><code class="lang-bash"><span class="token punctuation">[</span>root@docker ~<span class="token punctuation">]</span><span class="token comment"># docker pull [OPTIONS] NAME[:TAG|@DIGEST]</span>
+</code></pre>
+<p>&#x955C;&#x50CF;&#x540D;&#x79F0;&#x540E;&#x9762;&#x53EF;&#x4EE5;&#x8DDF;&#x4E0A;&#x6807;&#x7B7E;&#x6216;&#x8005;&#x955C;&#x50CF;&#x6458;&#x8981;&#xFF0C;&#x4E0D;&#x5199;&#x7684;&#x8BDD; Docker &#x9ED8;&#x8BA4;&#x62C9;&#x53D6; latest&#xFF08;&#x6700;&#x65B0;&#x7248;&#x672C;&#xFF09;&#x3002;&#x5982;&#x679C;&#x8981;&#x62C9;&#x53D6;&#x67D0;&#x4E00;&#x4E2A;&#x955C;&#x50CF;&#xFF0C;&#x4F46;&#x662F;&#x4E0D;&#x77E5;&#x9053;&#x4ED3;&#x5E93;&#x4E2D;&#x662F;&#x5426;&#x6709;&#x8FD9;&#x4E2A;&#x955C;&#x50CF;&#xFF0C;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x641C;&#x7D22;&#x67E5;&#x770B;&#xFF0C;--filter &#x662F;&#x6839;&#x636E;&#x6761;&#x4EF6;&#x5BF9;&#x641C;&#x7D22;&#x7ED3;&#x679C;&#x8FDB;&#x884C;&#x8FC7;&#x6EE4;&#x3002;</p>
+<pre class="language-"><code class="lang-bash"><span class="token punctuation">[</span>root@docker ~<span class="token punctuation">]</span><span class="token comment"># docker search --filter STARS=100  nginx</span>
+NAME                          DESCRIPTION                                     STARS     OFFICIAL   AUTOMATED
+nginx                         Official build of Nginx.                        <span class="token number">15928</span>     <span class="token punctuation">[</span>OK<span class="token punctuation">]</span>
+jwilder/nginx-proxy           Automated Nginx reverse proxy <span class="token keyword">for</span> docker con&#x2026;   <span class="token number">2101</span>                 <span class="token punctuation">[</span>OK<span class="token punctuation">]</span>
+richarvey/nginx-php-fpm       Container running Nginx + PHP-FPM capable of&#x2026;   <span class="token number">820</span>                  <span class="token punctuation">[</span>OK<span class="token punctuation">]</span>
+jc21/nginx-proxy-manager      Docker container <span class="token keyword">for</span> managing Nginx proxy ho&#x2026;   <span class="token number">288</span>
+linuxserver/nginx             An Nginx container, brought to you by LinuxS&#x2026;   <span class="token number">160</span>
+tiangolo/nginx-rtmp           Docker image with Nginx using the nginx-rtmp&#x2026;   <span class="token number">147</span>                  <span class="token punctuation">[</span>OK<span class="token punctuation">]</span>
+jlesage/nginx-proxy-manager   Docker container <span class="token keyword">for</span> Nginx Proxy Manager        <span class="token number">145</span>                  <span class="token punctuation">[</span>OK<span class="token punctuation">]</span>
+alfg/nginx-rtmp               NGINX, nginx-rtmp-module and FFmpeg from sou&#x2026;   <span class="token number">111</span>                  <span class="token punctuation">[</span>OK<span class="token punctuation">]</span>
+<span class="token punctuation">[</span>root@docker ~<span class="token punctuation">]</span><span class="token comment">#</span>
+</code></pre>
+<p>&#x8FD9;&#x91CC;&#x4E0B;&#x8F7D;&#x7684;&#x662F; ubuntu:20.04 &#x7684;&#x955C;&#x50CF;&#xFF0C;library/ubuntu &#x6307;&#x7684;&#x7528;&#x6237;&#x540D;/&#x4ED3;&#x5E93;&#x540D;&#xFF0C;library &#x5219;&#x662F;&#x5B98;&#x65B9;&#x9ED8;&#x8BA4;&#x7684;&#x540D;&#x5B57;&#x3002;</p>
+<pre class="language-"><code class="lang-bash"><span class="token punctuation">[</span>root@docker ~<span class="token punctuation">]</span><span class="token comment"># docker pull ubuntu:20.04</span>
+<span class="token number">20.04</span>: Pulling from library/ubuntu
+Digest: sha256:626ffe58f6e7566e00254b638eb7e0f3b11d4da9675088f4781a50ae288f3322
+Status: Downloaded newer image <span class="token keyword">for</span> ubuntu:20.04
+docker.io/library/ubuntu:20.04
+<span class="token punctuation">[</span>root@docker ~<span class="token punctuation">]</span><span class="token comment">#</span>
+</code></pre>
+<h3 id="&#x67E5;&#x770B;&#x955C;&#x50CF;"><a name="&#x67E5;&#x770B;&#x955C;&#x50CF;" class="anchor-navigation-ex-anchor" href="#&#x67E5;&#x770B;&#x955C;&#x50CF;"><i class="fa fa-link" aria-hidden="true"></i></a>1.3.3. &#x67E5;&#x770B;&#x955C;&#x50CF;</h3>
+<p>&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x5217;&#x51FA;&#x4E0B;&#x8F7D;&#x7684;&#x955C;&#x50CF;&#x4FE1;&#x606F;&#xFF0C;&#x4FE1;&#x606F;&#x5305;&#x542B;&#x4ED3;&#x5E93;&#x540D;&#x3001;&#x6807;&#x7B7E;&#x3001;&#x955C;&#x50CF; ID&#x3001;&#x521B;&#x5EFA;&#x65F6;&#x95F4;&#x4EE5;&#x53CA;&#x6240;&#x5360;&#x7684;&#x7A7A;&#x95F4;&#x3002;</p>
+<pre class="language-"><code class="lang-bash"><span class="token punctuation">[</span>root@docker ~<span class="token punctuation">]</span><span class="token comment"># docker image ls</span>
+REPOSITORY   TAG       IMAGE ID       CREATED        SIZE
+nginx        latest    f652ca386ed1   <span class="token number">5</span> days ago     141MB
+ubuntu       <span class="token number">20.04</span>     ba6acccedd29   <span class="token number">7</span> weeks ago    <span class="token number">72</span>.8MB
+ubuntu       latest    ba6acccedd29   <span class="token number">7</span> weeks ago    <span class="token number">72</span>.8MB
+ubuntu       <span class="token number">18.04</span>     5a214d77f5d7   <span class="token number">2</span> months ago   <span class="token number">63</span>.1MB
+<span class="token punctuation">[</span>root@docker ~<span class="token punctuation">]</span><span class="token comment">#</span>
+</code></pre>
+<h3 id="&#x542F;&#x52A8;&#x5BB9;&#x5668;"><a name="&#x542F;&#x52A8;&#x5BB9;&#x5668;" class="anchor-navigation-ex-anchor" href="#&#x542F;&#x52A8;&#x5BB9;&#x5668;"><i class="fa fa-link" aria-hidden="true"></i></a>1.3.4. &#x542F;&#x52A8;&#x5BB9;&#x5668;</h3>
+<p>&#x4E0B;&#x8F7D;&#x597D;&#x955C;&#x50CF;&#x4E4B;&#x540E;&#xFF0C;&#x6211;&#x4EEC;&#x5C31;&#x80FD;&#x4EE5;&#x955C;&#x50CF;&#x4E3A;&#x57FA;&#x7840;&#x53BB;&#x542F;&#x52A8;&#x4E00;&#x4E2A;&#x5BB9;&#x5668;&#x4E86;&#x3002;&#x8FD9;&#x91CC;&#x4EE5; ubuntu:20.04 &#x7684;&#x955C;&#x50CF;&#x542F;&#x52A8;&#x4E00;&#x4E2A;&#x5BB9;&#x5668;&#xFF0C;&#x5E76;&#x5728;&#x5BB9;&#x5668;&#x4E2D;&#x6267;&#x884C; date &#x547D;&#x4EE4;&#x540E;&#x9000;&#x51FA;&#x5E76;&#x5220;&#x9664;&#x5BB9;&#x5668;&#xFF0C;&#x5C4F;&#x5E55;&#x6253;&#x5370;&#x7684;&#x4FE1;&#x606F;&#x4E0E;&#x6211;&#x4EEC;&#x5E73;&#x65F6;&#x6267;&#x884C; date &#x547D;&#x4EE4;&#x4E00;&#x6837;&#xFF0C;&#x4F46;&#x662F;&#x8FD9;&#x4E2A;&#x4FE1;&#x606F;&#x662F;&#x6267;&#x884C;&#x5BB9;&#x5668;&#x5185;&#x7684; date &#x547D;&#x4EE4;&#x6253;&#x5370;&#x51FA;&#x6765;&#x7684;&#x3002;</p>
+<pre class="language-"><code class="lang-bash"><span class="token punctuation">[</span>root@docker ~<span class="token punctuation">]</span><span class="token comment"># docker run --rm ubuntu:20.04 /bin/date</span>
+Wed Dec  <span class="token number">8</span> 09:34:46 UTC <span class="token number">2021</span>
+<span class="token punctuation">[</span>root@docker ~<span class="token punctuation">]</span><span class="token comment">#</span>
+</code></pre>
+<p>&#x4E0A;&#x9762;&#x662F;&#x4EE5;&#x975E;&#x4EA4;&#x4E92;&#x5F0F;&#x542F;&#x52A8;&#x7684;&#x5BB9;&#x5668;&#xFF0C;&#x5BB9;&#x5668;&#x8FD8;&#x53EF;&#x4EE5;&#x4EA4;&#x4E92;&#x5F0F;&#x542F;&#x52A8;&#x3002;&#x5176;&#x4E2D;&#xFF0C;-t &#x662F;&#x5206;&#x914D;&#x4E00;&#x4E2A;&#x4F2A;&#x7EC8;&#x7AEF;&#x5E76;&#x7ED1;&#x5B9A;&#x5230;&#x5BB9;&#x5668;&#x7684;&#x6807;&#x51C6;&#x8F93;&#x5165;&#x4E0A;&#xFF0C;-i &#x662F;&#x4EE5;&#x4EA4;&#x4E92;&#x5F0F;&#x542F;&#x52A8;&#xFF0C;&#x5C31;&#x662F;&#x8BA9;&#x5BB9;&#x5668;&#x7684;&#x6807;&#x51C6;&#x8F93;&#x5165;&#x4FDD;&#x6301;&#x6253;&#x5F00;&#x3002;&#x5728;&#x4EA4;&#x4E92;&#x6A21;&#x5F0F;&#x4E0B;&#xFF0C;&#x7528;&#x6237;&#x521B;&#x5EFA;&#x5BB9;&#x5668;&#x4E4B;&#x540E;&#x81EA;&#x52A8;&#x8FDB;&#x5165;&#x5230;&#x5BB9;&#x5668;&#x73AF;&#x5883;&#x4E86;&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x770B;&#x5230; ubuntu &#x5BB9;&#x5668;&#x4E5F;&#x62E5;&#x6709;&#x81EA;&#x5DF1;&#x7684;&#x6839;&#x76EE;&#x5F55;&#x7ED3;&#x6784;&#x3002;</p>
+<pre class="language-"><code class="lang-bash"><span class="token punctuation">[</span>root@docker ~<span class="token punctuation">]</span><span class="token comment"># docker run -it ubuntu:20.04 /bin/bash</span>
+root@cc0a1a750941:/<span class="token comment"># ls</span>
+bin  boot  dev  etc  home  lib  lib32  lib64  libx32  media  mnt  opt  proc  root  run  sbin  srv  sys  tmp  usr  var
+<span class="token punctuation">[</span>root@docker ~<span class="token punctuation">]</span><span class="token comment">#</span>
+</code></pre>
+<p>&#x4F46;&#x662F;&#x66F4;&#x591A;&#x65F6;&#x5019;&#xFF0C;&#x6211;&#x4EEC;&#x7684;&#x5BB9;&#x5668;&#x90FD;&#x662F;&#x540E;&#x53F0;&#x8FD0;&#x884C;&#xFF0C;&#x5C31;&#x662F;&#x4E0D;&#x628A;&#x5BB9;&#x5668;&#x5185;&#x7684;&#x6267;&#x884C;&#x7ED3;&#x679C;&#x8F93;&#x51FA;&#x5230;&#x5BBF;&#x4E3B;&#x673A;&#x4E0A;&#xFF0C;&#x901A;&#x8FC7; -d &#x53C2;&#x6570;&#x5B9E;&#x73B0;&#x3002;&#x540E;&#x53F0;&#x8FD0;&#x884C;&#x542F;&#x52A8;&#x7684;&#x5BB9;&#x5668;&#xFF0C;&#x4F1A;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x552F;&#x4E00;&#x7684;&#x5BB9;&#x5668; ID&#x3002;</p>
+<pre class="language-"><code class="lang-bash"><span class="token punctuation">[</span>root@docker ~<span class="token punctuation">]</span><span class="token comment"># docker run -d ubuntu:20.04 /bin/sh -c &quot;while true; do echo &apos;hello docker&apos; &gt;&gt; /var/log/docker.log; sleep 1; done&quot;</span>
+20b03a8a8d7463efa2ad2cd045db654be27a83f4f499a9fb8df83436d2cfdc53
+<span class="token punctuation">[</span>root@docker ~<span class="token punctuation">]</span><span class="token comment">#</span>
+</code></pre>
+<p>&#x53EF;&#x4EE5;&#x901A;&#x8FC7; docker container ls &#x547D;&#x4EE4;&#x6765;&#x67E5;&#x770B;&#x8FD0;&#x884C;&#x5BB9;&#x5668;&#x7684;&#x4FE1;&#x606F;&#xFF0C;&#x52A0;&#x4E0A; -a &#x53C2;&#x6570;&#x662F;&#x663E;&#x793A;&#x6240;&#x6709;&#x5BB9;&#x5668;&#x3002;</p>
+<pre class="language-"><code class="lang-bash"><span class="token punctuation">[</span>root@docker ~<span class="token punctuation">]</span><span class="token comment"># docker container ls</span>
+CONTAINER ID   IMAGE          COMMAND                  CREATED          STATUS          PORTS     NAMES
+20b03a8a8d74   ubuntu:20.04   <span class="token string">&quot;/bin/sh -c &apos;while t&#x2026;&quot;</span>   <span class="token number">26</span> minutes ago   Up <span class="token number">26</span> minutes             flamboyant_booth
+<span class="token punctuation">[</span>root@docker ~<span class="token punctuation">]</span><span class="token comment">#</span>
+</code></pre>
+<h3 id="&#x8FDB;&#x5165;&#x5BB9;&#x5668;"><a name="&#x8FDB;&#x5165;&#x5BB9;&#x5668;" class="anchor-navigation-ex-anchor" href="#&#x8FDB;&#x5165;&#x5BB9;&#x5668;"><i class="fa fa-link" aria-hidden="true"></i></a>1.3.5. &#x8FDB;&#x5165;&#x5BB9;&#x5668;</h3>
+<p>&#x6211;&#x4EEC;&#x4F7F;&#x7528; -d &#x53C2;&#x6570;&#x521B;&#x5EFA;&#x7684;&#x5BB9;&#x5668;&#xFF0C;&#x9ED8;&#x8BA4;&#x4F1A;&#x4E22;&#x5230;&#x540E;&#x53F0;&#x53BB;&#x8FD0;&#x884C;&#xFF0C;&#x4F46;&#x662F;&#x5F88;&#x591A;&#x65F6;&#x5019;&#x6211;&#x4EEC;&#x9700;&#x8981;&#x8FDB;&#x5165;&#x5230;&#x4E00;&#x4E2A;&#x540E;&#x53F0;&#x8FD0;&#x884C;&#x7684;&#x5BB9;&#x5668;&#x8FDB;&#x884C;&#x67D0;&#x4E9B;&#x64CD;&#x4F5C;&#xFF0C;&#x8FD9;&#x65F6;&#x5019;&#x5C31;&#x9700;&#x8981;&#x4F7F;&#x7528;&#x5230; exec &#x547D;&#x4EE4;&#x4E86;&#x3002;</p>
+<pre class="language-"><code class="lang-bash"><span class="token punctuation">[</span>root@docker ~<span class="token punctuation">]</span><span class="token comment"># docker exec -it flamboyant_booth bash</span>
+root@20b03a8a8d74:/<span class="token comment"># ls</span>
+bin  boot  dev  etc  home  lib  lib32  lib64  libx32  media  mnt  opt  proc  root  run  sbin  srv  sys  tmp  usr  var
+root@20b03a8a8d74:/<span class="token comment">#</span>
+</code></pre>
+<p>&#x5982;&#x679C;&#x4EC5;&#x4F7F;&#x7528; -i &#x53C2;&#x6570;&#xFF0C;&#x7531;&#x4E8E;&#x6CA1;&#x6709; -t &#x53C2;&#x6570;&#x5206;&#x914D;&#x7684;&#x4F2A;&#x7EC8;&#x7AEF;&#xFF0C;&#x8FDB;&#x5165;&#x5BB9;&#x5668;&#x540E;&#x6CA1;&#x6709; Linux &#x547D;&#x4EE4;&#x63D0;&#x793A;&#x7B26;&#xFF0C;&#x4F46;&#x662F;&#x4ECD;&#x7136;&#x53EF;&#x4EE5;&#x6267;&#x884C;&#x547D;&#x4EE4;&#x5E76;&#x8FD4;&#x56DE;&#x7ED3;&#x679C;&#x3002;&#x6240;&#x4EE5;&#x4E00;&#x822C; -it &#x53C2;&#x6570;&#x4E00;&#x8D77;&#x4F7F;&#x7528;&#x3002;</p>
+<pre class="language-"><code class="lang-bash"><span class="token punctuation">[</span>root@docker ~<span class="token punctuation">]</span><span class="token comment"># docker exec -i flamboyant_booth bash</span>
+<span class="token function">date</span>
+Mon Dec <span class="token number">13</span> 01:24:06 UTC <span class="token number">2021</span>
+<span class="token builtin class-name">pwd</span>
+/
+</code></pre>
+<p>&#x6211;&#x4EEC;&#x4F7F;&#x7528; exec &#x547D;&#x4EE4;&#x8FDB;&#x5165;&#x5BB9;&#x5668;&#xFF0C;&#x5982;&#x679C;&#x8FD9;&#x4E2A;&#x6807;&#x51C6;&#x8F93;&#x5165; exit &#x65F6;&#xFF0C;&#x5E76;&#x4E0D;&#x4F1A;&#x5BFC;&#x81F4;&#x5BB9;&#x5668;&#x505C;&#x6B62;&#x3002;&#x5BB9;&#x5668;&#x8FD8;&#x5728;&#x6B63;&#x5E38;&#x8FD0;&#x884C;&#xFF0C;&#x53EA;&#x662F;&#x8FD9;&#x4E2A;&#x6807;&#x51C6;&#x8F93;&#x5165;&#x65AD;&#x5F00;&#x4E86;&#x3002;&#x53EF;&#x4EE5;&#x6309;&#x4E0B; Ctrl + d &#x6216;&#x8005;&#x5728;&#x5BB9;&#x5668;&#x547D;&#x4EE4;&#x884C;&#x6267;&#x884C; exit &#x9000;&#x51FA;&#x5BB9;&#x5668;&#x3002;</p>
+<pre class="language-"><code class="lang-bash"><span class="token punctuation">[</span>root@docker ~<span class="token punctuation">]</span><span class="token comment"># docker exec -it flamboyant_booth bash</span>
+root@20b03a8a8d74:/<span class="token comment"># date</span>
+Mon Dec <span class="token number">13</span> 01:31:49 UTC <span class="token number">2021</span>
+root@20b03a8a8d74:/<span class="token comment"># exit</span>
+</code></pre>
+<h3 id="&#x505C;&#x6B62;&#x5BB9;&#x5668;"><a name="&#x505C;&#x6B62;&#x5BB9;&#x5668;" class="anchor-navigation-ex-anchor" href="#&#x505C;&#x6B62;&#x5BB9;&#x5668;"><i class="fa fa-link" aria-hidden="true"></i></a>1.3.6. &#x505C;&#x6B62;&#x5BB9;&#x5668;</h3>
+<p>&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x624B;&#x52A8;&#x6267;&#x884C; docker container stop &#x547D;&#x4EE4;&#x505C;&#x6B62;&#x5BB9;&#x5668;&#x3002;&#x5F53;&#x7136;&#xFF0C;&#x5BB9;&#x5668;&#x5185;&#x7684;&#x5E94;&#x7528;&#x7A0B;&#x5E8F;&#x8FD0;&#x884C;&#x7ED3;&#x675F;&#x65F6;&#xFF0C;&#x5BB9;&#x5668;&#x4E5F;&#x4F1A;&#x81EA;&#x52A8;&#x9000;&#x51FA;&#x3002;&#x9000;&#x51FA;&#x72B6;&#x6001;&#x7684;&#x5BB9;&#x5668;&#x9700;&#x8981;&#x4F7F;&#x7528; docker container ls -a &#x547D;&#x4EE4;&#x624D;&#x80FD;&#x770B;&#x5230;&#x3002;&#x6211;&#x4EEC;&#x8FD8;&#x53EF;&#x4EE5;&#x4F7F;&#x7528; docker container start &#x547D;&#x4EE4;&#x6765;&#x542F;&#x52A8;&#x5BB9;&#x5668;&#xFF0C;docker container restart &#x547D;&#x4EE4;&#x662F;&#x5C06;&#x4E00;&#x4E2A;&#x5BB9;&#x5668;&#x505C;&#x6B62;&#x518D;&#x91CD;&#x65B0;&#x542F;&#x52A8;&#x3002;</p>
+<pre class="language-"><code class="lang-bash"><span class="token punctuation">[</span>root@docker ~<span class="token punctuation">]</span><span class="token comment"># docker container ls -a</span>
+CONTAINER ID   IMAGE          COMMAND                  CREATED      STATUS      PORTS     NAMES
+20b03a8a8d74   ubuntu:20.04   <span class="token string">&quot;/bin/sh -c &apos;while t&#x2026;&quot;</span>   <span class="token number">2</span> days ago   Up <span class="token number">2</span> days             flamboyant_booth
+<span class="token punctuation">[</span>root@docker ~<span class="token punctuation">]</span><span class="token comment"># docker container stop flamboyant_booth</span>
+flamboyant_booth
+<span class="token punctuation">[</span>root@docker ~<span class="token punctuation">]</span><span class="token comment"># docker container ls -a</span>
+CONTAINER ID   IMAGE          COMMAND                  CREATED      STATUS                       PORTS     NAMES
+20b03a8a8d74   ubuntu:20.04   <span class="token string">&quot;/bin/sh -c &apos;while t&#x2026;&quot;</span>   <span class="token number">2</span> days ago   Exited <span class="token punctuation">(</span><span class="token number">137</span><span class="token punctuation">)</span> <span class="token number">2</span> seconds ago             flamboyant_booth
+<span class="token punctuation">[</span>root@docker ~<span class="token punctuation">]</span><span class="token comment">#</span>
+</code></pre>
+<h3 id="&#x5220;&#x9664;&#x5BB9;&#x5668;"><a name="&#x5220;&#x9664;&#x5BB9;&#x5668;" class="anchor-navigation-ex-anchor" href="#&#x5220;&#x9664;&#x5BB9;&#x5668;"><i class="fa fa-link" aria-hidden="true"></i></a>1.3.7. &#x5220;&#x9664;&#x5BB9;&#x5668;</h3>
+<p>&#x5BB9;&#x5668;&#x662F;&#x6709;&#x751F;&#x547D;&#x5468;&#x671F;&#x7684;&#x3002;&#x56E0;&#x4E3A;&#x8FD0;&#x884C;&#x7ED3;&#x675F;&#x800C;&#x8FDB;&#x5165;&#x9000;&#x51FA;&#x72B6;&#x6001;&#x7684;&#x5BB9;&#x5668;&#xFF0C;&#x6216;&#x8005;&#x56E0;&#x4E3A;&#x53D1;&#x5E03;&#x7248;&#x672C;&#x800C;&#x88AB;&#x66FF;&#x6362;&#x7684;&#x5BB9;&#x5668;&#xFF0C;&#x8FD9;&#x4E9B;&#x5BB9;&#x5668;&#x90FD;&#x4E0D;&#x5904;&#x4E8E;&#x8FD0;&#x884C;&#x7684;&#x72B6;&#x6001;&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x4F7F;&#x7528; docker container rm &#x547D;&#x4EE4;&#x6765;&#x5220;&#x9664;&#x8FD9;&#x4E9B;&#x5BB9;&#x5668;&#x3002;&#x5982;&#x679C;&#x8981;&#x5220;&#x9664;&#x4E00;&#x4E2A;&#x8FD0;&#x884C;&#x72B6;&#x6001;&#x7684;&#x5BB9;&#x5668;&#xFF0C;&#x53EF;&#x4EE5;&#x4F7F;&#x7528; -f &#x53C2;&#x6570;&#xFF0C;docker &#x4F1A;&#x53D1;&#x9001; SIGKILL &#x4FE1;&#x53F7;&#x505C;&#x6B62;&#x5BB9;&#x5668;&#x8FDB;&#x7A0B;&#x5E76;&#x5220;&#x9664;&#x5BB9;&#x5668;&#x3002;</p>
+<pre class="language-"><code class="lang-bash"><span class="token punctuation">[</span>root@docker ~<span class="token punctuation">]</span><span class="token comment"># docker container ls -a</span>
+CONTAINER ID   IMAGE          COMMAND                  CREATED        STATUS                      PORTS     NAMES
+6ca17aec7f97   ubuntu:20.04   <span class="token string">&quot;bash date&quot;</span>              <span class="token number">28</span> hours ago   Exited <span class="token punctuation">(</span><span class="token number">126</span><span class="token punctuation">)</span> <span class="token number">28</span> hours ago             condescending_bouman
+20b03a8a8d74   ubuntu:20.04   <span class="token string">&quot;/bin/sh -c &apos;while t&#x2026;&quot;</span>   <span class="token number">3</span> days ago     Up <span class="token number">29</span> hours                           flamboyant_booth
+<span class="token punctuation">[</span>root@docker ~<span class="token punctuation">]</span><span class="token comment"># docker container rm 6ca17aec7f97</span>
+6ca17aec7f97
+<span class="token punctuation">[</span>root@docker ~<span class="token punctuation">]</span><span class="token comment"># docker container ls -a</span>
+CONTAINER ID   IMAGE          COMMAND                  CREATED      STATUS        PORTS     NAMES
+20b03a8a8d74   ubuntu:20.04   <span class="token string">&quot;/bin/sh -c &apos;while t&#x2026;&quot;</span>   <span class="token number">4</span> days ago   Up <span class="token number">30</span> hours             flamboyant_booth
+<span class="token punctuation">[</span>root@docker ~<span class="token punctuation">]</span><span class="token comment">#</span>
+</code></pre>
+<p>&#x5982;&#x679C;&#x9700;&#x8981;&#x5220;&#x9664;&#x6240;&#x6709;&#x9000;&#x51FA;&#x72B6;&#x6001;&#x7684;&#x5BB9;&#x5668;&#xFF0C;&#x53EF;&#x4EE5;&#x4F7F;&#x7528; docker container prune &#x547D;&#x4EE4;&#x4E00;&#x6B21;&#x6027;&#x6E05;&#x7406;&#x3002;</p>
+<pre class="language-"><code class="lang-bash"><span class="token punctuation">[</span>root@docker ~<span class="token punctuation">]</span><span class="token comment"># docker container ls -a</span>
+CONTAINER ID   IMAGE          COMMAND                  CREATED          STATUS                      PORTS     NAMES
+c38b5ecba22c   ubuntu:20.04   <span class="token string">&quot;/bin/bash -c pwd&quot;</span>       <span class="token number">5</span> seconds ago    Exited <span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">)</span> <span class="token number">3</span> seconds ago              gallant_torvalds
+c69212a7de81   ubuntu:20.04   <span class="token string">&quot;/bin/bash -c date&quot;</span>      <span class="token number">19</span> seconds ago   Exited <span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">)</span> <span class="token number">17</span> seconds ago             quizzical_raman
+20b03a8a8d74   ubuntu:20.04   <span class="token string">&quot;/bin/sh -c &apos;while t&#x2026;&quot;</span>   <span class="token number">4</span> days ago       Up <span class="token number">30</span> hours                           flamboyant_booth
+<span class="token punctuation">[</span>root@docker ~<span class="token punctuation">]</span><span class="token comment"># docker container prune</span>
+WARNING<span class="token operator">!</span> This will remove all stopped containers.
+Are you sure you want to continue? <span class="token punctuation">[</span>y/N<span class="token punctuation">]</span> y
+Deleted Containers:
+c38b5ecba22c24c15789a53b89a687ec7ecf918e2b4e42d3548d5c101cac54e7
+c69212a7de811575b2dc7994059ba3bf18479312d18273c1e5f63e0685860696
+
+Total reclaimed space: 0B
+<span class="token punctuation">[</span>root@docker ~<span class="token punctuation">]</span><span class="token comment">#</span>
+</code></pre>
+<h3 id="&#x5220;&#x9664;&#x955C;&#x50CF;"><a name="&#x5220;&#x9664;&#x955C;&#x50CF;" class="anchor-navigation-ex-anchor" href="#&#x5220;&#x9664;&#x955C;&#x50CF;"><i class="fa fa-link" aria-hidden="true"></i></a>1.3.8. &#x5220;&#x9664;&#x955C;&#x50CF;</h3>
+<p>&#x5220;&#x9664;&#x672C;&#x5730;&#x7684;&#x955C;&#x50CF;&#x4F7F;&#x7528; docker image rm &#x547D;&#x4EE4;&#xFF0C;&#x6216;&#x8005; docker rmi &#x547D;&#x4EE4;&#x3002;&#x5176;&#x4E2D;&#xFF0C;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x955C;&#x50CF; ID&#x3001;&#x955C;&#x50CF;&#x540D;&#x3001;&#x6458;&#x8981;&#x6765;&#x6307;&#x5B9A;&#x8981;&#x5220;&#x9664;&#x7684;&#x955C;&#x50CF;&#x3002;&#x4E0B;&#x9762;&#x6211;&#x4EEC;&#x5220;&#x9664; redis &#x955C;&#x50CF;&#xFF1A;</p>
+<pre class="language-"><code class="lang-bash"><span class="token punctuation">[</span>root@docker ~<span class="token punctuation">]</span><span class="token comment"># docker image ls</span>
+REPOSITORY   TAG       IMAGE ID       CREATED        SIZE
+redis        latest    aea9b698d7d1   <span class="token number">11</span> days ago    113MB
+nginx        latest    f652ca386ed1   <span class="token number">11</span> days ago    141MB
+centos       latest    5d0da3dc9764   <span class="token number">2</span> months ago   231MB
+<span class="token punctuation">[</span>root@docker ~<span class="token punctuation">]</span><span class="token comment"># docker image rm redis:latest</span>
+Untagged: redis:latest
+Untagged: redis@sha256:2f502d27c3e9b54295f1c591b3970340d02f8a5824402c8179dcd20d4076b796
+Deleted: sha256:aea9b698d7d1d2fb22fe74868e27e767334b2cc629a8c6f9db8cc1747ba299fd
+Deleted: sha256:beb6c508926e807f60b6a3816068ee3e2cece7654abaff731e4a26bcfebe04d8
+Deleted: sha256:a5b5ed3d7c997ffd7c58cd52569d8095a7a3729412746569cdbda0dfdd228d1f
+Deleted: sha256:ee76d3703ec1ab8abc11858117233a3ac8c7c5e37682f21a0c298ad0dc09a9fe
+Deleted: sha256:60abc26bc7704070b2977b748ac0fd4ca94b818ed4ba1ef59ca8803e95920161
+Deleted: sha256:6a2f1dcfa7455f60a810bb7c4786d62029348f64c4fcff81c48f8625cf0d995a
+<span class="token punctuation">[</span>root@docker ~<span class="token punctuation">]</span><span class="token comment"># docker image ls</span>
+REPOSITORY   TAG       IMAGE ID       CREATED        SIZE
+nginx        latest    f652ca386ed1   <span class="token number">11</span> days ago    141MB
+centos       latest    5d0da3dc9764   <span class="token number">2</span> months ago   231MB
+<span class="token punctuation">[</span>root@docker ~<span class="token punctuation">]</span><span class="token comment">#</span>
+</code></pre>
+<h3 id="&#x5907;&#x4EFD;&#x8FC1;&#x79FB;"><a name="&#x5907;&#x4EFD;&#x8FC1;&#x79FB;" class="anchor-navigation-ex-anchor" href="#&#x5907;&#x4EFD;&#x8FC1;&#x79FB;"><i class="fa fa-link" aria-hidden="true"></i></a>1.3.9. &#x5907;&#x4EFD;&#x8FC1;&#x79FB;</h3>
+<p><strong>save &#x548C; load</strong></p>
+<p>docker save &#x547D;&#x4EE4;&#x53EF;&#x4EE5;&#x4FDD;&#x5B58;&#x4E00;&#x4E2A;&#x6216;&#x591A;&#x4E2A;&#x955C;&#x50CF;&#xFF0C;&#x4F8B;&#x5982;&#x5C06;&#x672C;&#x5730;&#x7684; centos &#x955C;&#x50CF;&#x548C; ubuntu &#x955C;&#x50CF;&#x4FDD;&#x5B58;&#x5230; image.tar &#x6587;&#x4EF6;&#x4E2D;&#x3002;</p>
+<pre class="language-"><code class="lang-bash"><span class="token punctuation">[</span>root@docker ~<span class="token punctuation">]</span><span class="token comment"># docker save -o images.tar centos:latest ubuntu:latest</span>
+<span class="token punctuation">[</span>root@docker ~<span class="token punctuation">]</span><span class="token comment"># ll -sh images.tar</span>
+300M -rw------- <span class="token number">1</span> root root 300M Dec <span class="token number">15</span> <span class="token number">11</span>:40 images.tar
+<span class="token punctuation">[</span>root@docker ~<span class="token punctuation">]</span><span class="token comment">#</span>
+</code></pre>
+<p>docker load &#x547D;&#x4EE4;&#x7528;&#x4E8E;&#x5C06;&#x7531; docker save &#x547D;&#x4EE4;&#x6253;&#x5305;&#x751F;&#x6210;&#x7684; tar &#x6587;&#x4EF6;&#x8F7D;&#x5165;&#x5230;&#x672C;&#x5730;&#x955C;&#x50CF;&#x3002;</p>
+<pre class="language-"><code class="lang-bash"><span class="token punctuation">[</span>root@docker ~<span class="token punctuation">]</span><span class="token comment"># docker load -i images.tar</span>
+74ddd0ec08fa: Loading layer <span class="token punctuation">[</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">&gt;</span><span class="token punctuation">]</span>  <span class="token number">238</span>.6MB/238.6MB
+Loaded image: centos:latest
+Loaded image: ubuntu:latest
+<span class="token punctuation">[</span>root@docker ~<span class="token punctuation">]</span><span class="token comment">#</span>
+</code></pre>
+<p><strong>export &#x548C; import</strong></p>
+<p>docker export &#x547D;&#x4EE4;&#x53EF;&#x4EE5;&#x4FDD;&#x5B58; container &#x6587;&#x4EF6;&#x7CFB;&#x7EDF;&#xFF0C;&#x4F8B;&#x5982;&#x5C06;&#x8FD0;&#x884C;&#x4E2D;&#x7684;&#x5BB9;&#x5668;&#x4FDD;&#x5B58;&#x4E3A; ubuntu.tar &#x6587;&#x4EF6;&#x3002;</p>
+<pre class="language-"><code class="lang-bash"><span class="token punctuation">[</span>root@docker ~<span class="token punctuation">]</span><span class="token comment"># docker export 20b03a8a8d74 -o ubuntu.tar</span>
+</code></pre>
+<p>docker import &#x547D;&#x4EE4;&#x7528;&#x4E8E;&#x5C06;&#x7531; docker export &#x547D;&#x4EE4;&#x6253;&#x5305;&#x751F;&#x6210;&#x7684; tar &#x6587;&#x4EF6;&#x8F7D;&#x5165;&#x5230;&#x672C;&#x5730;&#x955C;&#x50CF;&#x3002;</p>
+<pre class="language-"><code class="lang-bash"><span class="token punctuation">[</span>root@docker ~<span class="token punctuation">]</span><span class="token comment"># docker import ubuntu.tar ubuntu:1.0</span>
+sha256:bcead6020c0ca44be9d380d29e6cf1e5ed304e855f93858e897374ca7ec84734
+<span class="token punctuation">[</span>root@docker ~<span class="token punctuation">]</span><span class="token comment">#</span>
+</code></pre>
+<p>docker save &#x547D;&#x4EE4;&#x4FDD;&#x5B58;&#x7684;&#x662F;&#x955C;&#x50CF;&#xFF0C;docker export &#x547D;&#x4EE4;&#x4FDD;&#x5B58;&#x7684;&#x662F;&#x5BB9;&#x5668;&#x3002;docker load &#x547D;&#x4EE4;&#x7528;&#x6765;&#x8F7D;&#x5165;&#x955C;&#x50CF;&#x5305;&#x6587;&#x4EF6;&#xFF0C;docker import &#x547D;&#x4EE4;&#x7528;&#x6765;&#x8F7D;&#x5165;&#x5BB9;&#x5668;&#x5305;&#x6587;&#x4EF6;&#xFF0C;&#x4F46;&#x662F;&#x4E24;&#x8005;&#x90FD;&#x662F;&#x5C06;&#x5305;&#x6587;&#x4EF6;&#x8F7D;&#x5165;&#x5230;&#x672C;&#x5730;&#x955C;&#x50CF;&#x3002;&#x5728;&#x8F7D;&#x5165;&#x955C;&#x50CF;&#x65F6;&#xFF0C;docker load &#x547D;&#x4EE4;&#x4E0D;&#x80FD;&#x5BF9;&#x955C;&#x50CF;&#x91CD;&#x547D;&#x540D;&#xFF0C;&#x800C; docker import &#x547D;&#x4EE4;&#x53EF;&#x4EE5;&#x5BF9;&#x955C;&#x50CF;&#x6307;&#x5B9A;&#x540D;&#x79F0;&#x3002;</p>
+<h3 id="&#x5BB9;&#x5668;&#x65E5;&#x5FD7;"><a name="&#x5BB9;&#x5668;&#x65E5;&#x5FD7;" class="anchor-navigation-ex-anchor" href="#&#x5BB9;&#x5668;&#x65E5;&#x5FD7;"><i class="fa fa-link" aria-hidden="true"></i></a>1.3.10. &#x5BB9;&#x5668;&#x65E5;&#x5FD7;</h3>
+<p>&#x540E;&#x53F0;&#x8FD0;&#x884C;&#x7684;&#x5BB9;&#x5668;&#xFF0C;&#x5E94;&#x7528;&#x7A0B;&#x5E8F;&#x7684;&#x65E5;&#x5FD7;&#x5E76;&#x4E0D;&#x4F1A;&#x6253;&#x5370;&#x51FA;&#x6765;&#x3002;&#x5982;&#x679C;&#x6CA1;&#x6709;&#x914D;&#x7F6E;&#x6570;&#x636E;&#x6301;&#x4E45;&#x5316;&#xFF0C;&#x65E5;&#x5FD7;&#x6587;&#x4EF6;&#x662F;&#x5B58;&#x653E;&#x5728;&#x5BB9;&#x5668;&#x5185;&#x7684;&#x3002;&#x4F46;&#x662F;&#x6211;&#x4EEC;&#x4E0D;&#x9700;&#x8981;&#x8FDB;&#x5165;&#x5BB9;&#x5668;&#x624D;&#x80FD;&#x67E5;&#x770B;&#x65E5;&#x5FD7;&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x4F7F;&#x7528; docker logs &#x547D;&#x4EE4;&#x5B9E;&#x73B0;&#x3002;</p>
+<pre class="language-"><code class="lang-bash"><span class="token punctuation">[</span>root@docker ~<span class="token punctuation">]</span><span class="token comment"># docker logs -f nginx</span>
+/docker-entrypoint.sh: /docker-entrypoint.d/ is not empty, will attempt to perform configuration
+/docker-entrypoint.sh: Looking <span class="token keyword">for</span> shell scripts <span class="token keyword">in</span> /docker-entrypoint.d/
+/docker-entrypoint.sh: Launching /docker-entrypoint.d/10-listen-on-ipv6-by-default.sh
+<span class="token number">10</span>-listen-on-ipv6-by-default.sh: info: Getting the checksum of /etc/nginx/conf.d/default.conf
+<span class="token number">10</span>-listen-on-ipv6-by-default.sh: info: Enabled listen on IPv6 <span class="token keyword">in</span> /etc/nginx/conf.d/default.conf
+/docker-entrypoint.sh: Launching /docker-entrypoint.d/20-envsubst-on-templates.sh
+/docker-entrypoint.sh: Launching /docker-entrypoint.d/30-tune-worker-processes.sh
+/docker-entrypoint.sh: Configuration complete<span class="token punctuation">;</span> ready <span class="token keyword">for</span> start up
+<span class="token number">2021</span>/12/16 07:00:00 <span class="token punctuation">[</span>notice<span class="token punctuation">]</span> <span class="token number">1</span><span class="token comment">#1: using the &quot;epoll&quot; event method</span>
+<span class="token number">2021</span>/12/16 07:00:00 <span class="token punctuation">[</span>notice<span class="token punctuation">]</span> <span class="token number">1</span><span class="token comment">#1: nginx/1.20.2</span>
+<span class="token number">2021</span>/12/16 07:00:00 <span class="token punctuation">[</span>notice<span class="token punctuation">]</span> <span class="token number">1</span><span class="token comment">#1: built by gcc 10.2.1 20210110 (Debian 10.2.1-6)</span>
+<span class="token number">2021</span>/12/16 07:00:00 <span class="token punctuation">[</span>notice<span class="token punctuation">]</span> <span class="token number">1</span><span class="token comment">#1: OS: Linux 5.4.0-91-generic</span>
+<span class="token number">2021</span>/12/16 07:00:00 <span class="token punctuation">[</span>notice<span class="token punctuation">]</span> <span class="token number">1</span><span class="token comment">#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576</span>
+<span class="token number">2021</span>/12/16 07:00:00 <span class="token punctuation">[</span>notice<span class="token punctuation">]</span> <span class="token number">1</span><span class="token comment">#1: start worker processes</span>
+<span class="token number">2021</span>/12/16 07:00:00 <span class="token punctuation">[</span>notice<span class="token punctuation">]</span> <span class="token number">1</span><span class="token comment">#1: start worker process 31</span>
+<span class="token number">2021</span>/12/16 07:00:00 <span class="token punctuation">[</span>notice<span class="token punctuation">]</span> <span class="token number">1</span><span class="token comment">#1: start worker process 32</span>
+</code></pre>
+<h3 id="&#x8D44;&#x6E90;&#x63A7;&#x5236;"><a name="&#x8D44;&#x6E90;&#x63A7;&#x5236;" class="anchor-navigation-ex-anchor" href="#&#x8D44;&#x6E90;&#x63A7;&#x5236;"><i class="fa fa-link" aria-hidden="true"></i></a>1.3.11. &#x8D44;&#x6E90;&#x63A7;&#x5236;</h3>
+<p>&#x6211;&#x4EEC;&#x5728;&#x542F;&#x52A8;&#x5BB9;&#x5668;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x53EF;&#x4EE5;&#x63A7;&#x5236;&#x5BB9;&#x5668;&#x5BF9;&#x8D44;&#x6E90;&#x7684;&#x4F7F;&#x7528;&#x3002;&#x4F8B;&#x5982;&#x9650;&#x5236;&#x5BB9;&#x5668;&#x6700;&#x591A;&#x4F7F;&#x7528; 500M &#x7269;&#x7406;&#x5185;&#x5B58;&#xFF0C;&#x7269;&#x7406;&#x5185;&#x5B58; + &#x4EA4;&#x6362;&#x5206;&#x533A;&#x4F7F;&#x7528;&#x7684;&#x603B;&#x5927;&#x5C0F;&#x9650;&#x5236;&#x5728; 800M&#xFF0C;&#x5E76;&#x4E14;&#x7981;&#x7528; OOM Killer&#x3002;</p>
+<pre class="language-"><code class="lang-bash">docker container run -d --name <span class="token string">&quot;nginx&quot;</span> --memory<span class="token operator">=</span><span class="token string">&quot;500M&quot;</span> --memory-swap<span class="token operator">=</span><span class="token string">&quot;800M&quot;</span> --oom-kill-disable nginx:1.20
+</code></pre>
+<blockquote>
+<p><strong>[info] &#x8BF4;&#x660E;</strong></p>
+<p>--memory-swap &#x662F;&#x7269;&#x7406;&#x5185;&#x5B58;&#x52A0;&#x4EA4;&#x6362;&#x5206;&#x533A;&#x7684;&#x603B;&#x4F7F;&#x7528;&#x91CF;&#x9650;&#x5236;&#xFF0C;&#x5E76;&#x4E14; --memory-swap &#x5FC5;&#x987B;&#x6BD4; --memory &#x8BBE;&#x7F6E;&#x7684;&#x8981;&#x5927;&#xFF0C;--memory &#x5141;&#x8BB8;&#x7684;&#x6700;&#x5C0F;&#x503C;&#x4E3A; 6M&#x3002;</p>
+<p>&#x5982;&#x679C; --memory &#x8BBE;&#x7F6E;&#x4E3A;500M&#xFF0C;--memory-swap &#x4E0D;&#x8BBE;&#x7F6E;&#x6216;&#x8005;&#x8BBE;&#x7F6E;&#x4E3A; 0&#xFF0C;&#x5219;&#x5BB9;&#x5668;&#x53EF;&#x4F7F;&#x7528;&#x548C; --memory &#x4E00;&#x6837;&#x591A;&#x7684;&#x4EA4;&#x6362;&#x5206;&#x533A; &#xFF0C;&#x90A3;&#x4E48;&#x5BB9;&#x5668;&#x7684;&#x5185;&#x5B58;&#x548C;&#x4EA4;&#x6362;&#x5206;&#x533A;&#x4E00;&#x5171;&#x53EF;&#x4EE5;&#x4F7F;&#x7528; 1G&#x3002;</p>
+<p>&#x60F3;&#x8981;&#x7981;&#x6B62;&#x5BB9;&#x5668;&#x4F7F;&#x7528;&#x4EA4;&#x6362;&#x5206;&#x533A;&#xFF0C;&#x9700;&#x8981;&#x628A; --memory &#x548C; --memory-swap &#x8BBE;&#x7F6E;&#x4E3A;&#x76F8;&#x540C;&#x7684;&#x503C;&#xFF0C;&#x56E0;&#x4E3A; --memory-swap &#x662F;&#x7269;&#x7406;&#x5185;&#x5B58;&#x52A0;&#x4EA4;&#x6362;&#x5206;&#x533A;&#x7684;&#x603B;&#x4F7F;&#x7528;&#x91CF;&#x9650;&#x5236;&#x3002;</p>
+</blockquote>
+<p>&#x5BF9;&#x4E8E; CPU &#x8D44;&#x6E90;&#x7684;&#x63A7;&#x5236;&#xFF0C;&#x4F8B;&#x5982;&#x4E3B;&#x673A;&#x6709; 2 &#x4E2A; CPU&#xFF0C;&#x9650;&#x5236;&#x5BB9;&#x5668;&#x6700;&#x591A;&#x4F7F;&#x7528; 1.5 &#x4E2A; CPU&#x3002;&#x8FD8;&#x53EF;&#x4EE5;&#x4F7F;&#x7528; --cpus=&quot;.5&quot; &#x53C2;&#x6570;&#x8BA9;&#x5BB9;&#x5668;&#x603B;&#x662F;&#x4F7F;&#x7528; 50% &#x7684; CPU&#x3002;</p>
+<pre class="language-"><code class="lang-bash">docker container run -d --name <span class="token string">&quot;nginx&quot;</span> --cpus<span class="token operator">=</span><span class="token string">&quot;1.5&quot;</span> nginx:1.20
+</code></pre>
+<p>&#x6211;&#x4EEC;&#x8FD8;&#x53EF;&#x4EE5;&#x9650;&#x5236;&#x5BB9;&#x5668;&#x4F7F;&#x7528;&#x7279;&#x5B9A;&#x7684; CPU &#x6216;&#x7279;&#x5B9A;&#x7684;&#x6838;&#xFF0C;&#x4F8B;&#x5982;&#x4E3B;&#x673A;&#x6709;&#x591A;&#x4E2A; CPU&#xFF0C;&#x5219;&#x5BB9;&#x5668;&#x53EF;&#x4EE5;&#x4F7F;&#x7528; CPU &#x7F16;&#x53F7;&#xFF08;&#x4ECE; 0 &#x5F00;&#x59CB;&#xFF09;&#x52A0;&#x9017;&#x53F7;&#x5206;&#x9694;&#x7B26;&#x6765;&#x63CF;&#x8FF0;&#x5BB9;&#x5668;&#x5177;&#x4F53;&#x4F7F;&#x7528;&#x90A3;&#x4E2A; CPU&#x3002;</p>
+<pre class="language-"><code class="lang-bash"><span class="token punctuation">[</span>root@docker ~<span class="token punctuation">]</span><span class="token comment"># docker container run -d --name &quot;nginx&quot; --cpuset-cpus=&quot;0,1&quot; nginx:1.20</span>
+a242e04bff0c10ed6388001119e0d08d4f85a8c075b6f0e0e1c81fa87b195944
+<span class="token punctuation">[</span>root@docker ~<span class="token punctuation">]</span><span class="token comment"># docker inspect nginx | grep CpusetCpus</span>
+            <span class="token string">&quot;CpusetCpus&quot;</span><span class="token builtin class-name">:</span> <span class="token string">&quot;0,1&quot;</span>,
+<span class="token punctuation">[</span>root@docker ~<span class="token punctuation">]</span><span class="token comment">#</span>
+</code></pre>
+<footer class="page-footer"><span class="copyright">Copyright &#xA9; &#x8352;&#x539F;&#x996E;&#x9732; 2019 all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">&#x8BE5;&#x6587;&#x4EF6;&#x4FEE;&#x8BA2;&#x65F6;&#x95F4;&#xFF1A;
+2022-06-07 17:23:25
+</span></footer>
+                                
+                                </section>
+                            
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="install.html" class="navigation navigation-prev " aria-label="Previous page: 安装">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="data-persistence.html" class="navigation navigation-next " aria-label="Next page: 数据持久化">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"镜像和容器","level":"2.2.3","depth":2,"next":{"title":"数据持久化","level":"2.2.4","depth":2,"path":"worknote/docker/data-persistence.md","ref":"worknote/docker/data-persistence.md","articles":[]},"previous":{"title":"安装","level":"2.2.2","depth":2,"path":"worknote/docker/install.md","ref":"worknote/docker/install.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-lunr","-search","-highlight","-sharing","disqus","prism","prism-themes","advanced-emoji","github","splitter","tbfed-pagefooter","anchors","anchor-navigation-ex@0.1.8","alerts","toggle-chapters"],"root":".","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright &copy 荒原饮露 2019","modify_label":"该文件修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"chapter-fold":{},"prism":{"css":["prism-themes/themes/prism-lucario.css"]},"disqus":{"useIdentifier":false,"shortName":"hercules-gitbook"},"github":{"url":"https://github.com/MF-ReStart/mf-restart.github.io"},"splitter":{},"fontsettings":{"theme":"white","family":"sans","size":2},"anchor-navigation-ex":{"isRewritePageTitle":true,"isShowTocTitleIcon":true,"tocLevel1Icon":"fa fa-hand-o-right","tocLevel2Icon":"fa fa-hand-o-right","tocLevel3Icon":"fa fa-hand-o-right"},"prism-themes":{},"alerts":{},"advanced-emoji":{"embedEmojis":false},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":true},"anchors":{},"toggle-chapters":{}},"theme":"default","author":"荒原饮露","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"荒原饮露的笔记","language":"zh-hans","links":{"sidebar":{"Home":"https://mf-restart.github.io/"}},"gitbook":"3.2.3","description":"记录工作和生活"},"file":{"path":"worknote/docker/images-and-containers.md","mtime":"2022-06-07T09:23:25.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2024-05-23T05:47:50.494Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/URI.js/1.16.1/URI.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-disqus/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-alerts/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-toggle-chapters/toggle.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
