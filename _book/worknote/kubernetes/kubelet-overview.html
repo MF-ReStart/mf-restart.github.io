@@ -1,0 +1,760 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <title>Kubelet概述 · 荒原饮露的笔记</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="HonKit 6.1.6">
+        <meta name="author" content="荒原饮露">
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search-plus/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/@honkit/honkit-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/@honkit/honkit-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../../styles/website.css">
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="object-resource-format.html" />
+    
+    
+    <link rel="prev" href="deployment-kubernetes-cluster.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book honkit-cloak">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        <li class="header">简介</li>
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                        <b>1.1.</b>
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Kubernetes</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="readme.html">
+            
+                <a href="readme.html">
+            
+                    
+                        <b>2.1.</b>
+                    
+                    Kubernetes
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.1" data-path="overview.html">
+            
+                <a href="overview.html">
+            
+                    
+                        <b>2.1.1.</b>
+                    
+                    概述
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.2" data-path="deployment-kubernetes-cluster.html">
+            
+                <a href="deployment-kubernetes-cluster.html">
+            
+                    
+                        <b>2.1.2.</b>
+                    
+                    部署Kubernetes集群
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="2.1.3" data-path="kubelet-overview.html">
+            
+                <a href="kubelet-overview.html">
+            
+                    
+                        <b>2.1.3.</b>
+                    
+                    Kubelet概述
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.4" data-path="object-resource-format.html">
+            
+                <a href="object-resource-format.html">
+            
+                    
+                        <b>2.1.4.</b>
+                    
+                    对象类资源格式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.5" data-path="workload-resources.html">
+            
+                <a href="workload-resources.html">
+            
+                    
+                        <b>2.1.5.</b>
+                    
+                    工作负载资源使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.6" data-path="service-resources.html">
+            
+                <a href="service-resources.html">
+            
+                    
+                        <b>2.1.6.</b>
+                    
+                    Service资源
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.7" data-path="ingress.html">
+            
+                <a href="ingress.html">
+            
+                    
+                        <b>2.1.7.</b>
+                    
+                    Ingress
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.8" data-path="storage.html">
+            
+                <a href="storage.html">
+            
+                    
+                        <b>2.1.8.</b>
+                    
+                    存储
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.9" data-path="configuration.html">
+            
+                <a href="configuration.html">
+            
+                    
+                        <b>2.1.9.</b>
+                    
+                    配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.10" data-path="statefulset.html">
+            
+                <a href="statefulset.html">
+            
+                    
+                        <b>2.1.10.</b>
+                    
+                    StatefulSet
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.11" data-path="certification-authorization-access-control.html">
+            
+                <a href="certification-authorization-access-control.html">
+            
+                    
+                        <b>2.1.11.</b>
+                    
+                    认证授权与准入控制
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Docker</li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="../docker/readme.html">
+            
+                <a href="../docker/readme.html">
+            
+                    
+                        <b>3.1.</b>
+                    
+                    Docker
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1.1" data-path="../docker/overview.html">
+            
+                <a href="../docker/overview.html">
+            
+                    
+                        <b>3.1.1.</b>
+                    
+                    概述
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.2" data-path="../docker/install.html">
+            
+                <a href="../docker/install.html">
+            
+                    
+                        <b>3.1.2.</b>
+                    
+                    安装
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.3" data-path="../docker/images-and-containers.html">
+            
+                <a href="../docker/images-and-containers.html">
+            
+                    
+                        <b>3.1.3.</b>
+                    
+                    镜像和容器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.4" data-path="../docker/data-persistence.html">
+            
+                <a href="../docker/data-persistence.html">
+            
+                    
+                        <b>3.1.4.</b>
+                    
+                    数据持久化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.5" data-path="../docker/network.html">
+            
+                <a href="../docker/network.html">
+            
+                    
+                        <b>3.1.5.</b>
+                    
+                    网络
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.6" data-path="../docker/dockerfile.html">
+            
+                <a href="../docker/dockerfile.html">
+            
+                    
+                        <b>3.1.6.</b>
+                    
+                    Dockerfile
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="header">MySql</li>
+        
+        
+    
+        <li class="chapter " data-level="4.1" data-path="../mysql/readme.html">
+            
+                <a href="../mysql/readme.html">
+            
+                    
+                        <b>4.1.</b>
+                    
+                    MySql
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.1.1" data-path="../mysql/mysql-base.html">
+            
+                <a href="../mysql/mysql-base.html">
+            
+                    
+                        <b>4.1.1.</b>
+                    
+                    基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="header">笔记</li>
+        
+        
+    
+        <li class="chapter " data-level="5.1" data-path="../../life/dream.html">
+            
+                <a href="../../life/dream.html">
+            
+                    
+                        <b>5.1.</b>
+                    
+                    Dream
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://github.com/honkit/honkit" target="blank" class="gitbook-link">
+            本书使用 HonKit 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >Kubelet概述</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div class="search-plus" id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="kubelet-概述">Kubelet 概述</h1>
+<p>我们可以使用 Kubectl 命令行工具管理 Kubernetes 集群。默认情况下，<code>kubectl</code> 在 <code>$HOME/.kube</code> 目录下查找名为 <code>config</code> 的文件。 你可以通过设置 <code>KUBECONFIG</code> 环境变量或者设置 <a href="https://kubernetes.io/docs/reference/generated/kubectl/kubectl/" target="_blank"><code>--kubeconfig</code></a>参数来指定其他 kubeconfig 文件。使用 kubeconfig 文件来组织有关集群、用户、命名空间和身份认证机制的信息。<code>kubectl</code> 命令行工具使用 kubeconfig 文件来查找选择集群所需的信息，并与集群的 API 服务器进行通信。</p>
+<p>说明：用于配置集群访问的文件称为 kubeconfig 文件。这是引用配置文件的通用方法。这并不意味着有一个名为 <code>kubeconfig</code> 的文件。</p>
+<h2 id="支持多集群、用户和身份认证机制-"><a href="">支持多集群</a>、用户和身份认证机制<a href="https://kubernetes.io/zh/docs/concepts/configuration/organize-cluster-access-kubeconfig/#支持多集群-用户和身份认证机制" target="_blank"> </a></h2>
+<p>假设您有多个集群，并且您的用户和组件以多种方式进行身份认证。比如：</p>
+<ul>
+<li>正在运行的 kubelet 可能使用证书在进行认证。</li>
+<li>用户可能通过令牌进行认证。</li>
+<li>管理员可能拥有多个证书集合提供给各用户。</li>
+</ul>
+<p>使用 kubeconfig 文件，您可以组织集群、用户和命名空间。您还可以定义上下文，以便在集群和命名空间之间快速轻松地切换。</p>
+<h2 id="上下文（context）">上下文（Context）</h2>
+<p>通过 kubeconfig 文件中的 context 元素，使用简便的名称来对访问参数进行分组。每个上下文都有三个参数：cluster、namespace 和 user。默认情况下，kubectl 命令行工具使用当前上下文中的参数与集群进行通信。</p>
+<p>选择当前上下文</p>
+<pre><code class="lang-bash">kubectl config use-context
+</code></pre>
+<h2 id="kubeconfig-环境变量">KUBECONFIG 环境变量</h2>
+<p><code>KUBECONFIG</code> 环境变量包含一个 kubeconfig 文件列表。 对于 Linux 和 Mac，列表以冒号分隔。对于 Windows，列表以分号分隔。 <code>KUBECONFIG</code> 环境变量不是必要的。 如果 <code>KUBECONFIG</code> 环境变量不存在，<code>kubectl</code> 使用默认的 kubeconfig 文件，<code>$HOME/.kube/config</code>。</p>
+<p>如果 <code>KUBECONFIG</code> 环境变量存在，<code>kubectl</code> 使用 <code>KUBECONFIG</code> 环境变量中列举的文件合并后的有效配置。</p>
+<h2 id="语法">语法</h2>
+<p>使用以下语法 <code>kubectl</code> 从终端窗口运行命令：</p>
+<pre><code class="lang-bash">kubectl [<span class="hljs-built_in">command</span>] [TYPE] [NAME] [flags]
+</code></pre>
+<ul>
+<li><code>command</code>: 指定要对一个或多个资源执行的操作，例如 <code>create</code>、<code>get</code>、<code>describe</code>、<code>delete</code>。</li>
+<li><code>TYPE</code>: 指定资源类型。资源类型不区分大小写， 可以指定单数、复数或缩写形式。</li>
+<li><code>NAME</code>: 指定资源的名称。名称区分大小写。 如果省略名称，则显示所有资源的详细信息 <code>kubectl get pods</code>。</li>
+<li><code>flags</code>: 指定可选的参数。</li>
+</ul>
+<h2 id="kubectl---help">Kubectl --help</h2>
+<h3 id="基本指令初级">基本指令(初级)</h3>
+<ul>
+<li>create: 从文件或标准输入创建资源。</li>
+<li>expose: 将资源作为新的 Kubernetes 服务公开。</li>
+<li>run: 在集群上运行指定的镜像。</li>
+<li>set: 设置对象的特定功能。</li>
+</ul>
+<h3 id="基本指令中级">基本指令(中级)</h3>
+<ul>
+<li>explain: 解释文档参考资料。</li>
+<li>get: 显示一个或多个资源。</li>
+<li>edit: 编辑服务器上的资源。</li>
+<li>delete: 通过文件名、标准输入、资源和名称或通过资源和标签选择器删除资源。</li>
+</ul>
+<h3 id="部署命令">部署命令</h3>
+<ul>
+<li>rollout: 管理资源的发布。</li>
+<li>scale: 对 deployment、ReplicaSet、Replication Controller 或 StatefulSet 扩容缩容。</li>
+<li>autoscale: 自动扩容缩容。</li>
+</ul>
+<h3 id="集群管理命令">集群管理命令</h3>
+<ul>
+<li>certificate: 修改证书资源。</li>
+<li>cluster-info: 显示集群信息。</li>
+<li>top: 显示资源(CPU/内存/存储)使用情况。</li>
+<li>cordon: 将节点标记为不可调度。</li>
+<li>uncordon: 将节点标记为可调度的。</li>
+<li>drain: 更新一个或多个节点上的污点。</li>
+<li>taint: 驱逐节点上的应用准备下线维护。</li>
+</ul>
+<h3 id="疑难解答和调试命令">疑难解答和调试命令</h3>
+<ul>
+<li>describe: 描述显示特定资源或资源组的详细信息。</li>
+<li>logs: 打印一个容器的日志。</li>
+<li>attach: 连接到正在运行的容器上。</li>
+<li>exec: 在容器中执行命令。</li>
+<li>port-forward: 转发一个或多个本地端口到一个 pod。</li>
+<li>proxy: 运行到 Kubernetes API 服务器的代理。</li>
+<li>cp: 在容器和容器之间复制文件和目录。</li>
+<li>auth: 授权检查。</li>
+<li>debug: 使用交互式调试容器调试群集资源。</li>
+</ul>
+<h3 id="高级命令">高级命令</h3>
+<ul>
+<li>diff: 由文件名或标准输入指定当前联机配置和应用时的配置差异。</li>
+<li>apply: 通过文件名或标准输入对资源应用配置。</li>
+<li>patch: 使用补丁更新资源的字段。</li>
+<li>replace: 用文件名或标准输入替换资源。</li>
+<li>wait: 等待一个或多个资源的特定条件。</li>
+<li>kustomize: 从 kustomization.yaml 文件中的指令生成一组 API 资源。</li>
+</ul>
+<h3 id="设置命令">设置命令</h3>
+<ul>
+<li>label: 更新资源上的标签。</li>
+<li>annotate: 更新一个或多个资源上的注解。</li>
+<li>completion: kubectl 命令自动补全。</li>
+</ul>
+<h3 id="其他命令">其他命令</h3>
+<ul>
+<li>api-resources: 打印受支持的 API 资源。</li>
+<li>api-versions: 打印受支持的 API 版本。</li>
+<li>config: 修改 Kubeconfig 文件。</li>
+<li>plugin: 提供与插件交互的实用程序。</li>
+<li>version: 打印当前上下文客户端和服务版本信息。</li>
+</ul>
+<h2 id="kubectl-管理应用生命周期">Kubectl 管理应用生命周期</h2>
+<p>创建应用</p>
+<pre><code class="lang-bash">kubectl create deployment myapp-deployment --image=ikubernetes/myapp:v1 --replicas=3
+</code></pre>
+<p>发布应用</p>
+<pre><code class="lang-bash">kubectl expose deployment myapp-deployment --name=myapp-service --<span class="hljs-built_in">type</span>=NodePort --port=8000 --target-port=80 --protocol=TCP
+</code></pre>
+<p>升级应用</p>
+<pre><code class="lang-bash">kubectl <span class="hljs-built_in">set</span> image deployment/myapp-deployment myapp=ikubernetes/myapp:v2
+kubectl rollout status deployment myapp-deployment <span class="hljs-comment"># 查看升级状态</span>
+</code></pre>
+<p>回滚应用</p>
+<pre><code class="lang-bash">kubectl rollout <span class="hljs-built_in">history</span> deployment myapp-deployment <span class="hljs-comment"># 查看版本发布历史记录</span>
+kubectl rollout <span class="hljs-built_in">history</span> deployment myapp-deployment --revision=3 <span class="hljs-comment"># 查看指定版本发布的详细信息</span>
+kubectl rollout undo deployment myapp-deployment <span class="hljs-comment"># 回滚到上一个版本</span>
+kubectl rollout undo deployment myapp-deployment --to-revision=2 <span class="hljs-comment"># 回滚到指定的版本</span>
+</code></pre>
+<p>删除应用</p>
+<pre><code class="lang-bash">kubectl delete deployments.apps myapp-deployment
+kubectl delete service myapp-service
+</code></pre>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="deployment-kubernetes-cluster.html" class="navigation navigation-prev " aria-label="Previous page: 部署Kubernetes集群">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="object-resource-format.html" class="navigation navigation-next " aria-label="Next page: 对象类资源格式">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Kubelet概述","level":"2.1.3","depth":2,"next":{"title":"对象类资源格式","level":"2.1.4","depth":2,"path":"worknote/kubernetes/object-resource-format.md","ref":"worknote/kubernetes/object-resource-format.md","articles":[]},"previous":{"title":"部署Kubernetes集群","level":"2.1.2","depth":2,"path":"worknote/kubernetes/deployment-kubernetes-cluster.md","ref":"worknote/kubernetes/deployment-kubernetes-cluster.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-lunr","-search","-sharing","search-plus","github","expandable-chapters","livereload"],"root":".","styles":{"website":"styles/website.css"},"pluginsConfig":{"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":true},"github":{"url":"https://github.com/MF-ReStart/mf-restart.github.io"},"search-plus":{},"expandable-chapters":{},"livereload":{},"highlight":{},"fontsettings":{"theme":"white","family":"sans","size":2}},"theme":"default","author":"荒原饮露","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"荒原饮露的笔记","language":"zh-hans","gitbook":"*","description":"记录工作和生活"},"file":{"path":"worknote/kubernetes/kubelet-overview.md","mtime":"2021-12-17T08:07:06.000Z","type":"markdown"},"gitbook":{"version":"6.1.6","time":"2026-01-30T01:16:32.830Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <noscript>
+        <style>
+            .honkit-cloak {
+                display: block !important;
+            }
+        </style>
+    </noscript>
+    <script>
+        // Restore sidebar state as critical path for prevent layout shift
+        function __init__getSidebarState(defaultValue){
+            var baseKey = "";
+            var key = baseKey + ":sidebar";
+            try {
+                var value = localStorage[key];
+                if (value === undefined) {
+                    return defaultValue;
+                }
+                var parsed = JSON.parse(value);
+                return parsed == null ? defaultValue : parsed;
+            } catch (e) {
+                return defaultValue;
+            }
+        }
+        function __init__restoreLastSidebarState() {
+            var isMobile = window.matchMedia("(max-width: 600px)").matches;
+            if (isMobile) {
+                // Init last state if not mobile
+                return;
+            }
+            var sidebarState = __init__getSidebarState(true);
+            var book = document.querySelector(".book");
+            // Show sidebar if it enabled
+            if (sidebarState && book) {
+                book.classList.add("without-animation", "with-summary");
+            }
+        }
+
+        try {
+            __init__restoreLastSidebarState();
+        } finally {
+            var book = document.querySelector(".book");
+            book.classList.remove("honkit-cloak");
+        }
+    </script>
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search-plus/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search-plus/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/@honkit/honkit-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

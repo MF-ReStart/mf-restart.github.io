@@ -1,0 +1,29 @@
+{
+  "title": "荒原饮露的笔记",
+  "description": "记录工作和生活",
+  "author": "荒原饮露",
+  "language": "zh-hans",
+  "root": ".",
+  "structure": {
+    "readme": "README.md"
+  },
+  "plugins": [
+    "-lunr",
+    "-search",
+    "-sharing",
+    "search-plus",
+    "github",
+    "expandable-chapters"
+  ],
+  "pluginsConfig": {
+    "theme-default": {
+      "showLevel": true
+    },
+    "github": {
+      "url": "https://github.com/MF-ReStart/mf-restart.github.io"
+    }
+  },
+  "styles": {
+    "website": "styles/website.css"
+  }
+}

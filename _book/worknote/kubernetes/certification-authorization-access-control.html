@@ -1,0 +1,928 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <title>认证授权与准入控制 · 荒原饮露的笔记</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="HonKit 6.1.6">
+        <meta name="author" content="荒原饮露">
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search-plus/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/@honkit/honkit-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/@honkit/honkit-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../../styles/website.css">
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../docker/readme.html" />
+    
+    
+    <link rel="prev" href="statefulset.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book honkit-cloak">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        <li class="header">简介</li>
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                        <b>1.1.</b>
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Kubernetes</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="readme.html">
+            
+                <a href="readme.html">
+            
+                    
+                        <b>2.1.</b>
+                    
+                    Kubernetes
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.1" data-path="overview.html">
+            
+                <a href="overview.html">
+            
+                    
+                        <b>2.1.1.</b>
+                    
+                    概述
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.2" data-path="deployment-kubernetes-cluster.html">
+            
+                <a href="deployment-kubernetes-cluster.html">
+            
+                    
+                        <b>2.1.2.</b>
+                    
+                    部署Kubernetes集群
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.3" data-path="kubelet-overview.html">
+            
+                <a href="kubelet-overview.html">
+            
+                    
+                        <b>2.1.3.</b>
+                    
+                    Kubelet概述
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.4" data-path="object-resource-format.html">
+            
+                <a href="object-resource-format.html">
+            
+                    
+                        <b>2.1.4.</b>
+                    
+                    对象类资源格式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.5" data-path="workload-resources.html">
+            
+                <a href="workload-resources.html">
+            
+                    
+                        <b>2.1.5.</b>
+                    
+                    工作负载资源使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.6" data-path="service-resources.html">
+            
+                <a href="service-resources.html">
+            
+                    
+                        <b>2.1.6.</b>
+                    
+                    Service资源
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.7" data-path="ingress.html">
+            
+                <a href="ingress.html">
+            
+                    
+                        <b>2.1.7.</b>
+                    
+                    Ingress
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.8" data-path="storage.html">
+            
+                <a href="storage.html">
+            
+                    
+                        <b>2.1.8.</b>
+                    
+                    存储
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.9" data-path="configuration.html">
+            
+                <a href="configuration.html">
+            
+                    
+                        <b>2.1.9.</b>
+                    
+                    配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.10" data-path="statefulset.html">
+            
+                <a href="statefulset.html">
+            
+                    
+                        <b>2.1.10.</b>
+                    
+                    StatefulSet
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="2.1.11" data-path="certification-authorization-access-control.html">
+            
+                <a href="certification-authorization-access-control.html">
+            
+                    
+                        <b>2.1.11.</b>
+                    
+                    认证授权与准入控制
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Docker</li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="../docker/readme.html">
+            
+                <a href="../docker/readme.html">
+            
+                    
+                        <b>3.1.</b>
+                    
+                    Docker
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1.1" data-path="../docker/overview.html">
+            
+                <a href="../docker/overview.html">
+            
+                    
+                        <b>3.1.1.</b>
+                    
+                    概述
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.2" data-path="../docker/install.html">
+            
+                <a href="../docker/install.html">
+            
+                    
+                        <b>3.1.2.</b>
+                    
+                    安装
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.3" data-path="../docker/images-and-containers.html">
+            
+                <a href="../docker/images-and-containers.html">
+            
+                    
+                        <b>3.1.3.</b>
+                    
+                    镜像和容器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.4" data-path="../docker/data-persistence.html">
+            
+                <a href="../docker/data-persistence.html">
+            
+                    
+                        <b>3.1.4.</b>
+                    
+                    数据持久化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.5" data-path="../docker/network.html">
+            
+                <a href="../docker/network.html">
+            
+                    
+                        <b>3.1.5.</b>
+                    
+                    网络
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.6" data-path="../docker/dockerfile.html">
+            
+                <a href="../docker/dockerfile.html">
+            
+                    
+                        <b>3.1.6.</b>
+                    
+                    Dockerfile
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="header">MySql</li>
+        
+        
+    
+        <li class="chapter " data-level="4.1" data-path="../mysql/readme.html">
+            
+                <a href="../mysql/readme.html">
+            
+                    
+                        <b>4.1.</b>
+                    
+                    MySql
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.1.1" data-path="../mysql/mysql-base.html">
+            
+                <a href="../mysql/mysql-base.html">
+            
+                    
+                        <b>4.1.1.</b>
+                    
+                    基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="header">笔记</li>
+        
+        
+    
+        <li class="chapter " data-level="5.1" data-path="../../life/dream.html">
+            
+                <a href="../../life/dream.html">
+            
+                    
+                        <b>5.1.</b>
+                    
+                    Dream
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://github.com/honkit/honkit" target="blank" class="gitbook-link">
+            本书使用 HonKit 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >认证授权与准入控制</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div class="search-plus" id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="认证、授权与准入控制">认证、授权与准入控制</h1>
+<p>在任何将资源或服务提供给有限使用者的系统上，认证和授权是两个必不可少的功能，前者用于身份鉴别，负责验证“来者是谁”，而后者则实现权限分派，负责验证“他有权做什么事”。Kubernetes 系统完全分离了身份验证和授权功能，将二者分别以多种不同的插件实现，而且还有特有的准入控制机制，能在“写”请求上辅助完成更为精细的操作验证及变异功能。</p>
+<h2 id="kubernetes-访问控制">Kubernetes 访问控制</h2>
+<p>API Server 作为 Kubernetes 集群系统的网关，是访问及管理资源对象的唯一入口，它默认监听 TCP 的 6443 端口，通过 HTTPS 协议暴露了一个 RESTful 风格的接口。所有需要访问集群资源的集群组件或客户端，包括 kube-controller-manager、kube-scheduler、kubelet 和 kube-proxy 等集群基础组件，CoreDNS 等集群附加组件，以及 kubectl 命令等都必须要经过网关请求与集群通信。所有客户端均要经由 API Server 访问或改变集群状态以及完成数据存储，并且 API Server 会对每一次的访问请求进行合法检验，包括用户身份鉴别，操作权限验证以及操作是否符合全局规范的约束等。所有检查均正常完成且对象配置信息合法性检验无误后才能访问或存入数据到后端存储系统 ETCD 中。</p>
+<p><img src="https://hercules-gitbook-image.oss-cn-shenzhen.aliyuncs.com/gitbook/apiserver.png" alt=""></img></p>
+<p>客户端认证操作由 API Server 配置的一到多个认证插件完成。收到请求后，API Server 依次调用配置的认证插件来校验客户端的身份，直到其中一个插件可以识别出请求者的身份为止。授权操作则由一到多个授权插件完成，这些插件负责确定通过认证的用户是否有权限执行发出的资源请求，该类操作包括创建、读取、删除或修改指定的对象等。随后通过授权检测的用户请求修改相关的操作还要经由一到多个准入控制插件的遍历式检测，例如使用默认值补足要创建的目标资源对象中未定义的各个字段、检查目标 Namespace 资源对象是否存在、检查请求创建的 Pod 对象是否违反系统资源限制等，其中的任何检查失败都可能导致写入操作失败。</p>
+<h3 id="用户账号与用户组">用户账号与用户组</h3>
+<p>Kubernetes 系统上的用户账号及用户组的实现机制与常规应用略有不同。Kubernetes 集群将那些通过命令行工具 kubectl 、客户端库或者直接使用 RESTful 接口向 API Server 发起请求的客户端上的请求主体分为两个不同的类别：现实中的“人”和 Pod 对象，它们的用户身份分别对应用户账号（User Account，也称普通用户）和服务账号（Service Account，简称 SA）。</p>
+<p>用户账户：其使用主体往往是“人”，一般由外部的用户管理系统存储和管理，Kubernetes 本身不维护这一类的任何用户账户信息，他们不会存储到 API Server 之上，仅仅用于检验用户是否有权限执行其所请求的操作。</p>
+<p>服务账号：其使用主体是“应用程序”，专用于为 Pod 资源中的服务进程提供访问 Kubernetes API 时的身份标识（identity），Service Account 资源通常要绑定到特定的名称空间，它们由 API Server 自动创建或通过 API 调用，由管理员手动创建，通常附带着一组访问 API Server 的认证凭据 ------ Secret，可由同一名称空间的 Pod 应用访问 API Server 时使用。</p>
+<p>用户账号通常是用于复杂的业务逻辑管控，作用于系统全局，因而名称必须全局唯一。Kubernetes 并不会存储由认证插件从客户端请求中提取的用户及所属的组信息，因而也就没有办法对普通用户进行身份认证，他们仅仅用于检验该操作主体是否有权限执行其所请求的操作。相比较来说，服务账号则隶属于名称空间级别，仅用于实现某些特定操作任务，因此功能上要轻量得多。这两类账号都可以隶属于一个或多个用户组。</p>
+<p>对 API Server 来说，来自客户端的请求要么与用户账户进行绑定，要么以某个服务账户的身份进行，否则会被视为匿名请求。这意味着集群内部或外部的每个进程，包括由人类用户使用 kubectl，以及各节点上运行的 kubelet 进程，再到控制平面的成员组件，必须在向 API Server 发出请求时进行身份验证。</p>
+<h3 id="认证、授权、准入控制基础">认证、授权、准入控制基础</h3>
+<p>Kubernetes 使用身份验证插件对 API Server 请求进行身份验证，它允许管理员自定义服务账号和用户账号要启用或禁用的插件，并支持各自同时启用多种认证机制。具体设定时，至少应该为服务账号和用户账号各自启用一个认证插件。</p>
+<p>如果启用了多种认证机制，账号认证过程由认证插件以串行的方式进行，直到其中一种认证机制成功完成即结束。若认证失败，服务器则返回 401 状态码，反之，请求者就会被 Kubernetes 识别为某个具体的用户（以其用户名进行标识），并且该连接上随后的操作都会以此用户身份进行。API Server 对于接收到的每个访问请求会调用认证插件，尝试将以下属性与访问请求相关联。</p>
+<ul>
+<li>用户名：用户名，例如 Kubernetes-admin 等。</li>
+<li>用户 ID: 用户的数字标签符，用于确保用户身份的唯一性。</li>
+<li>用户组：用户所属的组，用于权限指派和继承， 常见的值可能是 <code>system:masters</code> 或者 <code>devops-team</code> 等。</li>
+<li>附加字段：键值数据类型的字符串，用于提供认证需要用到的额外信息。</li>
+</ul>
+<p>API Server 支持以下几种具体的认证方式，其中所有的令牌认证机制通常被统称为“承载令牌认证”。</p>
+<p>X509 客户证书认证：通过给 API 服务器传递 <code>--client-ca-file=SOMEFILE</code> 选项，就可以启动客户端证书身份认证。 所引用的文件必须包含一个或者多个证书机构，用来验证向 API 服务器提供的客户端证书。 如果提供了客户端证书并且证书被验证通过，则 subject 中的公共名称（Common Name）就被作为请求的用户名。</p>
+<p>静态令牌文件认证：当 API 服务器的命令行设置了 <code>--token-auth-file=SOMEFILE</code> 选项时，会从文件中读取持有者令牌。目前，令牌会长期有效，并且在不重启 API 服务器的情况下无法更改令牌列表。</p>
+<p>启动引导令牌认证：一种动态管理承载令牌进行身份认证的方式，常用于简化组建新 Kubernetes 集群时将节点加入集群的认证过程，需要由 Kube-apiserver 通过 --enable-bootstrap-token-auth 选项启用，新的工作节点首次加入时，Master 使用引导令牌确认节点身份的合法性之后自动为其签署数字证书以用于后续的安全通信，kubeadm 初始化的集群也是这种认证方式。</p>
+<p>Server Account 令牌：该认证方式会由 kube-apiserver 程序自动启用，它同样使用签名的承载令牌来验证请求，该认证方式还支持通过可选项 --service-account-key-file 加载签署承载令牌的秘钥文件，未指定时将使用 API Server 自己的 TLS 私钥，Server Account 通常由 API Server 自动创建，并通过 Server Account 准入控制器将其注入 Pod 对象，包括 Server Account 上的承载令牌，容器中的应用程序请求 API Server 的服务时以此完成身份认证。 </p>
+<p>那些未能被任何验证插件明确拒绝的请求中的用户即为匿名用户，该类用户会被冠以 system：anonymous 用户名，隶属于 system: unauthenticated 用户组。若 API Server 启用了除 Always Allow 以外的认证机制，则匿名用户处于启用状态，但是，处于安全因素考虑，建议管理员通过 --anonymous-auth=false 选项将其禁用。</p>
+<p>除了身份信息，请求报文还需要提供操作方法及其目标对象，例如针对某 Pod 资源对象进行的创建、查看、修改或者删除操作等。具体包含以下信息。</p>
+<ul>
+<li>API: 用于定义请求的目标是否为一个 API 资源。</li>
+<li>Request path: 请求的非资源路径，例如 /api 或 /healthz。</li>
+<li>API group: 要访问的 API 组，仅对资源型请求有效，默认为 core API group。</li>
+<li>Namespace: 目标资源的名称空间，仅对于隶属于名称空间类型的资源有效。</li>
+<li>API request verb: API 请求类的操作，即资源请求，包括 get、list、create、update、patch、watch、delete 等。</li>
+<li>HTTP request verb: HTTP 请求类的操作，即非资源类请求要执行的操作，如 get、post、put、delete 等。</li>
+<li>Resource: 请求的目标资源的 ID 或名称。</li>
+<li>Subersource: 请求的子资源。</li>
+</ul>
+<p>为了核验用户的操作许可，成功通过身份认证后的操作请求还需要转交给授权插件进行许可权限检查，以确保其拥有相应操作的许可。API Server 只要支持使用 4 类内置的授权插件来定义用户的操作权限。</p>
+<ul>
+<li>Node: 基于 Pod 资源的目标调度节点来实现对 kubelet 的访问控制。</li>
+<li>ABAC: Attribute-based access control，基于属性的访问控制。</li>
+<li>RBAC: Role-based access control，基于角色的访问控制。</li>
+<li>Webhook: 基于 HTTP 回调机制实现外部 REST 服务检查，确认用户授权的访问控制。</li>
+</ul>
+<p>另外，还有 AlwaysDeny 和 AlwaysAllow 两个特殊的授权插件，其中 AlwaysDeny（总是拒绝）仅用于测试，而 AlwaysAllow（总是允许），则用于不期望进行授权检查时直接在授权检查阶段放行所有的操作请求。--authorization-mode 选项用于定义 API Server 要启用的授权机制，多个选项值彼此间以逗号进行分隔。</p>
+<p>而准入控制器则用于在客户端请求经过身份验证和授权检查之后，将对象持久化存储到 etcd 之前拦截请求，从而实现在资源的创建，更新和删除操作期间强制执行对象的语义验证等功能，而读取资源信息的操作请求则不会经由准入控制器检查。API Server 内置了许多准入控制器，常用的包含下面列出的几种。</p>
+<ul>
+<li>AlwaysAdmin 和 AlwaysDeny: 前者允许所有请求，后者则拒绝所有请求。（已废弃，仅了解）</li>
+<li>AlwaysPullmages: 总是下载镜像，即每次创建 Pod 对象之前都要去下载镜像。</li>
+<li>NamespaceLifecycle: 拒绝在不存在的名称空间中创建资源，而删除名称空间则会级联删除其下的所有其他资源。</li>
+<li>LimitRanger: 可用资源范围界定，用于对设置了 LimitRange 的对象所发出的所有请求进行监控，以确保其资源请求不会超限。</li>
+<li>ServiceAccount: 用于实现服务账号管控机制的自动化，实现创建 Pod 对象时自动为其附加相关的 Service Account 对象。</li>
+<li>DefaultStorageClass: 监控所有创建 PVC 对象的请求，以保证那些没有附加任何专用 StorageClass 的请求会被自动设定一个默认值。</li>
+<li>ResourceQuota: 用于为名称空间设置可用资源上限，并确保当其中创建的任何设置了资源限额的对象时，不会超出名称空间的资源配额。       </li>
+</ul>
+<p>早期的准入控制器代码需要由管理员编译进 kube-apiserver 中才能使用，实现方式缺乏灵活性。于是 Kubernetes 自 v1.7 版本引入了 Initializers 和 External Admin Webhooks 来尝试突破此限制，而且 v1.9 版本起，External Admin Webhooks 被分为 Mutating-Admission Webhooks 和 ValidatingAdmission Webhooks 两种类型，分别用于在 API 中执行对象配置的变异和验证操作。检查期间，仅那些顺利通过所有准入控制器检查的资源操作请求的结果才能保存到 etcd 中，而任何一个准入控制器的拒绝都将导致写入请求失败。</p>
+<h2 id="serviceaccount-及认证">ServiceAccount 及认证</h2>
+<p> Kubernetes 原生的应用程序意味着专为运行于 Kubernetes 系统之上而开发的应用程序，这些程序托管运行在 Kubernetes 之上，能够直接与 API Server 进行交互，并进行资源状态的查询或更新，例如 Flannel 和 CoreDNS 等。显然，API Server 同样需要对来自 Pod 资源中的客户端程序进行身份验证，服务账号也是专用于这类场景的账号。ServiceAccount 资源一般由用户身份信息及保存了认证信息的 Secret 对象组成。</p>
+<h3 id="serviceaccount-自动化">ServiceAccount 自动化</h3>
+<p>我们创建的每个 Pod 资源都自动关联了一个 Secret 存储卷，并由其容器挂载至 /var/run/secret/kubernetes.io/serviceaccount 目录。各容器的挂载点目录通常存在 3 个文件：ca.crt、namespace 和 token，其中，token 文件保存了 ServiceAccount 的认证令牌，容器中的进程使用该账户认证到 API Server ，进而由认证插件完成用户认证并将其用户名传递给授权插件。</p>
+<p>每个 Pod 对象只有一个服务账号，若创建 Pod 资源时未予以明确指定，则 ServiceAccount 准入控制器会为其自动附加当前名称空间中默认的服务账号，其名称通常为 default。  </p>
+<p>Kubernetes 系统通过 3 个独立的组件相互协作实现了上面描述的 Pod 对象服务账号的自动化过程：ServiceAccount 准入控制器、令牌控制器和 ServiceAccount 控制器。ServiceAccount 控制器负责为名称空间管理相应的资源对象，它需要确保每个名称空间中都存在一个名为 default 的服务账号对象。ServiceAccount 准入控制器内置在 API Server 中，负责在创建或更新 Pod 时按需进行 ServiceAccount 资源对象相关信息的修改，这包括如下操作。</p>
+<ul>
+<li>若 Pod 没有显式定义使用的 ServiceAccount 对象，则将其设置为 default。</li>
+<li>若 Pod 显式引用了 ServiceAccount，则负责检查被引用的对象是否存在，不存在时将拒绝 Pod 资源的创建请求。</li>
+<li>若 Pod 中不包含 ImagePullSecret，则把 ServiceAccount 的 ImagePullSecret 附加其上。</li>
+<li>为带有访问 API 的令牌的 Pod 对象添加一个存储卷。</li>
+<li>为 Pod 对象中的每个容器添加一个 volumeMount，将 ServiceAccount 的存储卷挂载至 /var/run/secret/kubernetes.io/serviceaccount。</li>
+</ul>
+<p>令牌控制器是控制平面组件 Controller Manager 中的一个专用控制器，它工作于异步模式，负责完成如下任务。</p>
+<ul>
+<li>监控 ServiceAccount 的创建操作，并为其添加用于访问 API 的 Secret 对象。</li>
+<li>监控 ServiceAccount 的删除操作，并删除其相关的所有 ServiceAccount 令牌秘钥。</li>
+<li>监控 Secret 对象的添加操作，确保其引用的 ServiceAccount 存在，并在必要时为 Secret 对象添加认证令牌。</li>
+<li>监控 Secret 对象的删除操作，以确保删除每个 ServiceAccount 对此 Secret 的引用。</li>
+</ul>
+<h3 id="serviceaccount-基础应用">ServiceAccount 基础应用</h3>
+<p>ServiceAccount 是 Kubernetes API 上的一种资源类型，它属于名称空间级别，用于让 Pod 对象内部的应用程序在与 API Server 通信时完成身份认证。</p>
+<p>命令式 ServiceAccount 资源创建：</p>
+<p>kubectl create serviceaccount 命令能够快速创建自定义的 ServiceAccount 资源，我们仅需要在命令后给出目标 ServiceAccount 资源的名称。</p>
+<pre><code class="lang-bash">[root@k8s-master ~]# kubectl create serviceaccount my-service-account
+serviceaccount/my-service-account created
+</code></pre>
+<p>Kubernetes 会为创建的 ServiceAccount 资源自动生成并附加一个 Secret 对象，该对象以 ServiceAccount 资源名称为前缀。该 Secret 对象属于特殊的 kubernetes.io/service-account-token 类型，它包含 ca.crt、namespace 和 secret 这 3 个数据项，它们分别是 Kubernetes Root CA 证书、Secret 对象所在名称空间和访问 API Server 的令牌。</p>
+<p>ServiceAccount 资源清单：</p>
+<p>更完善的创建 ServiceAccount 资源的方式是使用资源规范，该规范比较简单，它没有 spec 字段，仅指定了资源名称，以及允许 Pod 对象将其自动挂载为存储卷，引用的 Secret 对象则由系统自动生成。</p>
+<pre><code class="lang-yaml"><span class="hljs-attr">apiVersion:</span> <span class="hljs-string">v1</span>
+<span class="hljs-attr">kind:</span> <span class="hljs-string">ServiceAccout</span>
+<span class="hljs-attr">metadata:</span>
+  <span class="hljs-attr">name:</span> <span class="hljs-string">sa-demo</span>
+  <span class="hljs-attr">namespace:</span> <span class="hljs-string">default</span>
+<span class="hljs-attr">automountServiceAccountToken:</span> <span class="hljs-literal">true</span> <span class="hljs-comment"># 是否让Pod自动挂载API令牌</span>
+</code></pre>
+<h2 id="kubeconfig-配置文件">kubeconfig 配置文件</h2>
+<p>基于无状态协议 HTTP/HTTPS 的 API Server 需要验证每次连接请求中的用户身份，因而 kube-controller-manager、kube-scheduler 和 kube-proxy 等各类客户端组件必须能自动完成身份认证信息的提交，但通过程序选项来提供这些信息会导致敏感信息泄露。另外，管理员还面临着使用 kubectl 工具接入不同集群时的认证及认证信息映射难题。为此，Kubernetes 设计了一种称为 kubeconfig 的配置文件，它保存有接入一到多个 Kubernetes 集群的相关配置信息，并允许管理员按需在各配置间灵活切换。</p>
+<pre><code class="lang-bash">                              kubernetes cluster1 API Server
+kubectl ---&gt; kubeconfig ---&gt;  kubernetes cluster2 API Server
+                              kubernetes cluster3 API Server
+</code></pre>
+<p>客户端程序可以通过默认路径、--kubeconfig 选项或者 KUBECONFIG 环境变量自定义要加载的 kubeconfig 文件，从而能够在每次的访问请求中可认证到目标 API Server。</p>
+<h3 id="kubeconfig-文件格式">kubeconfig 文件格式</h3>
+<p>kubeconfig 文件中，各集群的接入端点以列表形式定义在 clusters 配置段中，每个列表项代表一个 Kubernetes 集群，并拥有名称识别；各身份认证信息定义在 users 配置段中，每个列表项代表一个能够认证到某 Kubernetes 集群的凭据。将身份凭据与集群分开定义以便复用，具体使用时还要以 context（上下文）在二者之间按需建立映射关系，各 context 以列表形式定义在 context 配置段中，而当前使用的映射关系则定义在 current-context 配置段中。 </p>
+<pre><code class="lang-yaml"><span class="hljs-attr">clusters:</span>
+<span class="hljs-bullet">-</span> <span class="hljs-attr">cluster:</span>
+  <span class="hljs-attr">name:</span> <span class="hljs-string">kubernetes</span>
+  <span class="hljs-string">......</span>
+<span class="hljs-attr">users:</span>
+<span class="hljs-bullet">-</span> <span class="hljs-attr">name:</span> <span class="hljs-string">kubernetes-admin</span>
+  <span class="hljs-string">......</span>
+<span class="hljs-attr">contexts:</span>
+<span class="hljs-bullet">-</span> <span class="hljs-attr">context:</span>
+  <span class="hljs-attr">name:</span> <span class="hljs-string">kubernetes-admin@kubernetes</span>
+  <span class="hljs-string">......</span>
+<span class="hljs-attr">current-context:</span> <span class="hljs-string">kubernetes-admin@kubernetes</span>
+</code></pre>
+<p>使用 kubeadm 初始化 Kubernetes 集群过程中，在 Master 节点上生成的 /etc/kubernetes/admin.conf 文件就是一个 kubeconfig 格式的文件，它由 kubeadm init 命令自动生成，可由 kubectl 加载后接入当前集群的 API Server。kubeconfig 文件的默认加载路径为 $HOME/.kube/config，在 kubeadm init 命令初始化集群过程中有一个步骤便是将 /etc/kubenetes/admin.conf 复制为该默认搜索路径上的文件。当然也可以通过 --kubeconfig 选项或 KUBECONFIG 环境变量将其修改为其他路径。</p>
+<p>kubectl config view 命令能打印 kubeconfig 文件的内容，下面的命令结果显示了默认路径下的文件配置，包括集群列表、用户列表、上下文列表以及当前使用的上下文等。</p>
+<pre><code class="lang-yaml">[<span class="hljs-string">root@k8s-master</span> <span class="hljs-string">~</span>]<span class="hljs-comment"># kubectl config view</span>
+<span class="hljs-attr">apiVersion:</span> <span class="hljs-string">v1</span>
+<span class="hljs-attr">kind:</span> <span class="hljs-string">Config</span>
+<span class="hljs-attr">preferences:</span> {}
+<span class="hljs-attr">clusters:</span>
+<span class="hljs-bullet">-</span> <span class="hljs-attr">cluster:</span>
+    <span class="hljs-attr">certificate-authority-data:</span> <span class="hljs-string">DATA+OMITTED</span>
+    <span class="hljs-attr">server:</span> <span class="hljs-string">https://10.10.110.190:6443</span>
+  <span class="hljs-attr">name:</span> <span class="hljs-string">kubernetes</span>
+<span class="hljs-attr">users:</span>
+<span class="hljs-bullet">-</span> <span class="hljs-attr">name:</span> <span class="hljs-string">kubernetes-admin</span>
+  <span class="hljs-attr">user:</span>
+    <span class="hljs-attr">client-certificate-data:</span> <span class="hljs-string">REDACTED</span>
+    <span class="hljs-attr">client-key-data:</span> <span class="hljs-string">REDACTED</span>
+<span class="hljs-attr">contexts:</span>
+<span class="hljs-bullet">-</span> <span class="hljs-attr">context:</span>
+    <span class="hljs-attr">cluster:</span> <span class="hljs-string">kubernetes</span>
+    <span class="hljs-attr">user:</span> <span class="hljs-string">kubernetes-admin</span>
+  <span class="hljs-attr">name:</span> <span class="hljs-string">kubernetes-admin@kubernetes</span>
+<span class="hljs-attr">current-context:</span> <span class="hljs-string">kubernetes-admin@kubernetes</span>
+</code></pre>
+<p>用户可以在 kubeconfig 配置文件中按需自定义相关的配置信息，以实现使用不同的用户账号接入集群等功能。kubeconfig 是一个文本文件，尽管可以使用文本处理工具直接编辑，但强烈建议用户使用 kubectl config 及其子命令进行该文件的设定，以便利用其它自动进行语法检测等额外功能。kubectl config 的常用子命令有如下几项。</p>
+<ul>
+<li>view: 打印 kubeconfig 文件内容。</li>
+<li>set-cluster: 设定新的集群信息，以单独的列表项保存于 cluster 配置段。</li>
+<li>set-credentials: 设置认证凭据，保存为 users 配置段的一个列表项。</li>
+<li>set-context: 设置新的上下文信息，保存为 context 配置段的一个列表项。</li>
+<li>use-context: 设定 current-context 配置段，确定当前以哪个用户的身份接入到哪个集群当中。</li>
+<li>delete-cluster: 删除 cluster 中指定的列表项。</li>
+<li>delete-context: 删除 context 中指定的列表项。</li>
+<li>get-cluster: 获取 cluster 中定义的集群列表。</li>
+<li>get-context: 获取 context 中定义的上下文列表。</li>
+</ul>
+<h3 id="自定义-kubeconfig-文件">自定义 kubeconfig 文件</h3>
+<p>通常，一个完整 kubeconfig 配置文件的定义至少应该包括集群、身份凭证、上下文以及当前上下文 4 项，但在保存有集群身份和身份凭据的现有 kubeconfig 文件基础上添加新的上下文时，可能只需要提供身份凭据而复用现有的集群定义，具体操作步骤需要按实际情况判定。</p>
+<p>示例：为 dev 用户授权 default 命名空间下 Pod 读取权限。</p>
+<ol>
+<li>以证书认证方式授权 kubeconfig（使用现有 Kubernetes CA 签发 dev 证书）。</li>
+</ol>
+<pre><code class="lang-json">cat &gt; ca-config.<span class="hljs-property">json</span> &lt;&lt;<span class="hljs-variable constant_">EOF</span>
+{
+  <span class="hljs-string">"signing"</span>: {
+    <span class="hljs-string">"default"</span>: {
+      <span class="hljs-string">"expiry"</span>: <span class="hljs-string">"87600h"</span>
+    },
+    <span class="hljs-string">"profiles"</span>: {
+      <span class="hljs-string">"kubernetes"</span>: {
+         <span class="hljs-string">"expiry"</span>: <span class="hljs-string">"87600h"</span>,
+         <span class="hljs-string">"usages"</span>: [
+            <span class="hljs-string">"signing"</span>,
+            <span class="hljs-string">"key encipherment"</span>,
+            <span class="hljs-string">"server auth"</span>,
+            <span class="hljs-string">"client auth"</span>
+        ]
+      }
+    }
+  }
+}
+<span class="hljs-variable constant_">EOF</span>
+
+cat &gt; kubernetes-dev-csr.<span class="hljs-property">json</span> &lt;&lt;<span class="hljs-variable constant_">EOF</span>
+{
+  <span class="hljs-string">"CN"</span>: <span class="hljs-string">"kubernetes-dev"</span>,
+  <span class="hljs-string">"hosts"</span>: [],
+  <span class="hljs-string">"key"</span>: {
+    <span class="hljs-string">"algo"</span>: <span class="hljs-string">"rsa"</span>,
+    <span class="hljs-string">"size"</span>: <span class="hljs-number">2048</span>
+  },
+  <span class="hljs-string">"names"</span>: [
+    {
+       <span class="hljs-string">"C"</span>: <span class="hljs-string">"CN"</span>,
+       <span class="hljs-string">"ST"</span>: <span class="hljs-string">"GuangDong"</span>,
+       <span class="hljs-string">"L"</span>: <span class="hljs-string">"ShenZhen"</span>,
+       <span class="hljs-string">"O"</span>: <span class="hljs-string">"Kubernetes"</span>,
+       <span class="hljs-string">"OU"</span>: <span class="hljs-string">"System"</span>
+    }
+  ]
+}
+<span class="hljs-variable constant_">EOF</span>
+
+cfssl gencert -ca=<span class="hljs-regexp">/etc/</span>kubernetes/pki/ca.<span class="hljs-property">crt</span> -ca-key=<span class="hljs-regexp">/etc/</span>kubernetes/pki/ca.<span class="hljs-property">key</span> -config=ca-config.<span class="hljs-property">json</span> -profile=kubernetes kubernetes-dev-csr.<span class="hljs-property">json</span> | cfssljson -bare kubernetes-dev
+
+# 利用 <span class="hljs-title class_">Kubenetes</span> <span class="hljs-variable constant_">CA</span> 签发得到 dev 的公钥和私钥
+kubernetes-dev-key.<span class="hljs-property">pem</span>
+kubernetes-dev.<span class="hljs-property">pem</span>
+</code></pre>
+<ol>
+<li>设置集群参数，包括集群名称、API Server URL 和 kubenetes-ca 证书。</li>
+</ol>
+<pre><code class="lang-bash">kubectl config set-cluster dev --embed-certs=<span class="hljs-literal">true</span> \
+  --certificate-authority=/etc/kubernetes/pki/ca.crt \
+  --server=<span class="hljs-string">"https://10.10.110.190:6443"</span> \
+  --kubeconfig=<span class="hljs-variable">$HOME</span>/.kube/kube-dev.cnofig
+</code></pre>
+<ol>
+<li>添加身份凭据，使用前面生成的 dev 证书认证客户端。</li>
+</ol>
+<pre><code class="lang-bash">kubectl config set-credentials kubernetes-dev \
+  --client-key=kubernetes-dev-key.pem \
+  --client-certificate=kubernetes-dev.pem \
+  --embed-certs=<span class="hljs-literal">true</span> \
+  --kubeconfig=<span class="hljs-variable">$HOME</span>/.kube/kube-dev.cnofig
+</code></pre>
+<ol>
+<li>以用户 kubernetes-dev 的身份凭据与 dev 集群建立映射关系。</li>
+</ol>
+<pre><code class="lang-bash">kubectl config set-context kubernetes-dev@dev \
+  --cluster=dev \
+  --user=kubernetes-dev \
+  --kubeconfig=<span class="hljs-variable">$HOME</span>/.kube/kube-dev.cnofig
+</code></pre>
+<ol>
+<li>设置 kube-dev.cnofig 配置文件当前上下文为 kubernetes-dev@dev。</li>
+</ol>
+<pre><code class="lang-bash">kubectl config use-context kubernetes-dev@dev --kubeconfig=<span class="hljs-variable">$HOME</span>/.kube/kube-dev.cnofig
+</code></pre>
+<ol>
+<li>使用 kube-dev.cnofig 配置文件进行访问测试。</li>
+</ol>
+<pre><code class="lang-bash">kubectl get namespaces --kubeconfig=<span class="hljs-variable">$HOME</span>/.kube/kube-dev.cnofig
+Error from server (Forbidden): namespaces is forbidden: User <span class="hljs-string">"kubernetes-dev"</span> cannot list resource <span class="hljs-string">"namespaces"</span> <span class="hljs-keyword">in</span> API group <span class="hljs-string">""</span> at the cluster scope
+</code></pre>
+<p>这是因为 kubernetes-dev 用户没有绑定 Role，所以不具有任何权限。</p>
+<h2 id="基于角色的访问控制：rbac">基于角色的访问控制：RBAC</h2>
+<p>DAC（自主访问控制）、MAC（强制访问控制）、RBAC（基于角色的访问控制）和 ABAC（基于属性的访问控制）这四种主流的权限管理模型中，Kubernetes 支持使用后两种完成普通账户和服务账户的权限管理，另外支持的权限管理模型还有 Node 和 Webhook 两种。</p>
+<p>RBAC 是一种新型、灵活且使用广泛的访问控制机制，它将权限授予角色，通过让“用户”扮演一到多个“角色”完成灵活的权限管理，这有别于传统访问控制机制中将权限直接赋予使用者的方式。相对于 Kubernetes 支持的 ABAC 和 Webhook 等授权机制，RBAC 具有如下优势：</p>
+<ul>
+<li>对集群中的资源和非资源型 URL 的权限实现了完整覆盖。</li>
+<li>整个 RBAC 完全由少数几个 API 对象实现，而且与其他 API 对象一样可以使用 kubectl 或 API 调用进行操作。</li>
+<li>支持权限的运行时调整，无须重新启动 API Server。</li>
+</ul>
+<h3 id="rbac-授权模型">RBAC 授权模型</h3>
+<p>RBAC 是一种特定的权限管理模型，它把可以施加在“资源对象”上的“动作”称为“许可权限”，这些许可权限能够按需组合在一起构建出“角色”及其职能，并通过为“用户账户或组账户”分配一到多个角色完成权限委派。这些能够发出动作的用户在 RBAC 中也称为“主体”。</p>
+<pre><code class="lang-bash">          Role1 
+user ---&gt; Role2 ---&gt; 权限（操作---&gt;对象）
+          Role3
+</code></pre>
+<p>RBAC 访问控制模型中，授权操作只能通过角色完成，主体只有在分配到角色之后才能行使权限，且仅限于从其绑定的各角色之上继承而来的权限。换句话说，用户的权限仅能够通过角色分配获得，未能得到显示角色委派的用户则不具有任何权限。</p>
+<p>简单来说，RBAC 就是一种访问控制模型，它以角色为中心界定“谁”（subject）能够“操作”（verb）哪个或哪类“对象”（object）。动作的发出者即“主体”，通常以“账户”为载体，在 Kubernetes 系统上，它可以是普通账户，也可以是服务账户。“动作”用于表明要执行的具体操作，包括创建、删除、修改和查看等行为，对于 API Server 来说，即 PUT、DELETE 和 GET 等请求方法。而“对象”则是指管理操作能够施加的目标实体，对 Kubernetes API 来说主要指各类资源对象以及非资源型 URL。</p>
+<p>Kubernetes 系统的 RBAC 授权插件将角色分为 Role 和 ClusterRole 两类，它们都是 Kubernetes 内置支持的 API 资源类型，其中 Role 作用于名称空间级别，用于承载名称空间内的资源权限集合，而 ClusterRole 则能够同时承载名称空间和集群级别的资源权限集合。Role 无法承载集群级别的资源类型的操作权限，这类的资源包括集群级别的资源（例如 Nodes），非资源类型的端点（例如 /healthz），以及作用于所有名称空间的资源等。</p>
+<p>利用 Role 和 ClusterRole 两类角色进行赋权时，需要用到另外两种资源 RoleBinding 和 ClusterRoleBinding，它们同样时由 API Server 内置支持的资源类型。RoleBinding 用于将 Role 绑定到一个或者一组用户之上，它隶属于且仅能作用于其所在的单个名称空间。RoleBinding 可以引用同一名称空间中的 Role，也可以引用集群级别的 ClusterRole，但引用 ClusterRole 的许可权限会降低到仅能在 RoleBinding 所在的名称空间生效。而 ClusterRoleBinding 则用于将 ClusterRole 绑定到用户或组，它作用于集群全局，且仅能够引用 ClusterRole。</p>
+<h3 id="role-和-clusterrole">Role 和 ClusterRole</h3>
+<p>如前所述，Role 和 ClusterRole 是 API Server 内置的两种资源类型，它们在本质上都只是一组许可权限的集合。</p>
+<p>下面的配置清单示例在 default 名称空间中定义了一个 Role 的资源，它设定了读取、列出及监视 pods 和 services 资源。</p>
+<pre><code class="lang-yaml"><span class="hljs-attr">apiVersion:</span> <span class="hljs-string">rbac.authorization.k8s.io/v1</span>
+<span class="hljs-attr">kind:</span> <span class="hljs-string">Role</span>
+<span class="hljs-attr">metadata:</span>
+  <span class="hljs-attr">namespace:</span> <span class="hljs-string">default</span>
+  <span class="hljs-attr">name:</span> <span class="hljs-string">pods-reader</span>
+<span class="hljs-attr">rules:</span>
+<span class="hljs-bullet">-</span> <span class="hljs-attr">apiGroup:</span> [<span class="hljs-string">""</span>] <span class="hljs-comment"># "" 表示核心 API 群组</span>
+  <span class="hljs-attr">resources:</span> [<span class="hljs-string">"pods"</span>, <span class="hljs-string">"services"</span>]
+  <span class="hljs-attr">verbs:</span> [<span class="hljs-string">"get"</span>, <span class="hljs-string">"list"</span>, <span class="hljs-string">"watch"</span>]
+</code></pre>
+<p>ClusterRole 资源隶属于集群级别，它引用名称空间级别的资源意味着相关的操作权限能够在所有名称空间生效，同时，它也能够引用 Role 所不支持的集群级别的资源类型，例如 nodes 和 persistentvolumes 等。下面的示例清单定义了 ClusterRole 资源，它拥有管理集群节点信息的权限。ClusterRole 不属于名称空间，所以其配置不能够使用 metadata.namespace 字段。</p>
+<pre><code class="lang-yaml"><span class="hljs-attr">apiVersion:</span> <span class="hljs-string">rbac.authorization.k8s.io/v1</span>
+<span class="hljs-attr">kind:</span> <span class="hljs-string">ClusterRole</span>
+<span class="hljs-attr">metadata:</span>
+  <span class="hljs-attr">name:</span> <span class="hljs-string">nodes-admin</span>
+<span class="hljs-attr">rules:</span>
+<span class="hljs-bullet">-</span> <span class="hljs-attr">apiGroup:</span> [<span class="hljs-string">""</span>] <span class="hljs-comment"># "" 表示核心 API 群组</span>
+  <span class="hljs-attr">resources:</span> [<span class="hljs-string">"nodes"</span>]
+  <span class="hljs-attr">verbs:</span> [<span class="hljs-string">"*"</span>]
+</code></pre>
+<p>Role 或 ClusterRole 对象本身并不能作为动作的执行主体，它们需要“绑定”到主体（例如 User、Group 或 Service Account）之上完成赋权，而后由相应主体执行资源操作。</p>
+<h3 id="rolebinding-与-clusterrolebinding">RoleBinding 与 ClusterRoleBinding</h3>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="statefulset.html" class="navigation navigation-prev " aria-label="Previous page: StatefulSet">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../docker/readme.html" class="navigation navigation-next " aria-label="Next page: Docker">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"认证授权与准入控制","level":"2.1.11","depth":2,"next":{"title":"Docker","level":"3.1","depth":1,"path":"worknote/docker/readme.md","ref":"worknote/docker/readme.md","articles":[{"title":"概述","level":"3.1.1","depth":2,"path":"worknote/docker/overview.md","ref":"worknote/docker/overview.md","articles":[]},{"title":"安装","level":"3.1.2","depth":2,"path":"worknote/docker/install.md","ref":"worknote/docker/install.md","articles":[]},{"title":"镜像和容器","level":"3.1.3","depth":2,"path":"worknote/docker/images-and-containers.md","ref":"worknote/docker/images-and-containers.md","articles":[]},{"title":"数据持久化","level":"3.1.4","depth":2,"path":"worknote/docker/data-persistence.md","ref":"worknote/docker/data-persistence.md","articles":[]},{"title":"网络","level":"3.1.5","depth":2,"path":"worknote/docker/network.md","ref":"worknote/docker/network.md","articles":[]},{"title":"Dockerfile","level":"3.1.6","depth":2,"path":"worknote/docker/dockerfile.md","ref":"worknote/docker/dockerfile.md","articles":[]}]},"previous":{"title":"StatefulSet","level":"2.1.10","depth":2,"path":"worknote/kubernetes/statefulset.md","ref":"worknote/kubernetes/statefulset.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-lunr","-search","-sharing","search-plus","github","expandable-chapters","livereload"],"root":".","styles":{"website":"styles/website.css"},"pluginsConfig":{"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":true},"github":{"url":"https://github.com/MF-ReStart/mf-restart.github.io"},"search-plus":{},"expandable-chapters":{},"livereload":{},"highlight":{},"fontsettings":{"theme":"white","family":"sans","size":2}},"theme":"default","author":"荒原饮露","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"荒原饮露的笔记","language":"zh-hans","gitbook":"*","description":"记录工作和生活"},"file":{"path":"worknote/kubernetes/certification-authorization-access-control.md","mtime":"2021-12-17T07:59:16.000Z","type":"markdown"},"gitbook":{"version":"6.1.6","time":"2026-01-30T01:16:32.830Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <noscript>
+        <style>
+            .honkit-cloak {
+                display: block !important;
+            }
+        </style>
+    </noscript>
+    <script>
+        // Restore sidebar state as critical path for prevent layout shift
+        function __init__getSidebarState(defaultValue){
+            var baseKey = "";
+            var key = baseKey + ":sidebar";
+            try {
+                var value = localStorage[key];
+                if (value === undefined) {
+                    return defaultValue;
+                }
+                var parsed = JSON.parse(value);
+                return parsed == null ? defaultValue : parsed;
+            } catch (e) {
+                return defaultValue;
+            }
+        }
+        function __init__restoreLastSidebarState() {
+            var isMobile = window.matchMedia("(max-width: 600px)").matches;
+            if (isMobile) {
+                // Init last state if not mobile
+                return;
+            }
+            var sidebarState = __init__getSidebarState(true);
+            var book = document.querySelector(".book");
+            // Show sidebar if it enabled
+            if (sidebarState && book) {
+                book.classList.add("without-animation", "with-summary");
+            }
+        }
+
+        try {
+            __init__restoreLastSidebarState();
+        } finally {
+            var book = document.querySelector(".book");
+            book.classList.remove("honkit-cloak");
+        }
+    </script>
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search-plus/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search-plus/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/@honkit/honkit-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
