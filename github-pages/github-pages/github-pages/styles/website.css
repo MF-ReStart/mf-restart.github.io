@@ -1,0 +1,25 @@
+/* 让代码块圆润一点，背景更有质感 */
+pre {
+    background-color: #f6f8fa !important;
+    border-radius: 6px !important;
+    border: 1px solid #e1e4e8 !important;
+    padding: 16px !important;
+    overflow: auto !important;
+}
+
+/* 提高正文行高，阅读不累 */
+.book-body .page-inner section.normal {
+    line-height: 1.7 !important;
+    font-size: 16px !important;
+}
+
+/* 隐藏顶部中央的章节标题链接 */
+.book-header h1 {
+    display: none !important;
+}
+
+/* 如果你想让顶部栏更矮一点，腾出更多阅读空间 */
+.book-header {
+    background: transparent !important;
+    box-shadow: none !important;
+}

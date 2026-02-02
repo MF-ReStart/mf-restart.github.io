@@ -1,0 +1,749 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <title>数据持久化 · 荒原饮露的笔记</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="HonKit 6.1.6">
+        <meta name="author" content="荒原饮露">
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search-plus/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/@honkit/honkit-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/@honkit/honkit-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../../styles/website.css">
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="network.html" />
+    
+    
+    <link rel="prev" href="images-and-containers.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book honkit-cloak">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        <li class="header">简介</li>
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                        <b>1.1.</b>
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Kubernetes</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="../kubernetes/readme.html">
+            
+                <a href="../kubernetes/readme.html">
+            
+                    
+                        <b>2.1.</b>
+                    
+                    Kubernetes
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.1" data-path="../kubernetes/overview.html">
+            
+                <a href="../kubernetes/overview.html">
+            
+                    
+                        <b>2.1.1.</b>
+                    
+                    概述
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.2" data-path="../kubernetes/deployment-kubernetes-cluster.html">
+            
+                <a href="../kubernetes/deployment-kubernetes-cluster.html">
+            
+                    
+                        <b>2.1.2.</b>
+                    
+                    部署Kubernetes集群
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.3" data-path="../kubernetes/kubelet-overview.html">
+            
+                <a href="../kubernetes/kubelet-overview.html">
+            
+                    
+                        <b>2.1.3.</b>
+                    
+                    Kubelet概述
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.4" data-path="../kubernetes/object-resource-format.html">
+            
+                <a href="../kubernetes/object-resource-format.html">
+            
+                    
+                        <b>2.1.4.</b>
+                    
+                    对象类资源格式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.5" data-path="../kubernetes/workload-resources.html">
+            
+                <a href="../kubernetes/workload-resources.html">
+            
+                    
+                        <b>2.1.5.</b>
+                    
+                    工作负载资源使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.6" data-path="../kubernetes/service-resources.html">
+            
+                <a href="../kubernetes/service-resources.html">
+            
+                    
+                        <b>2.1.6.</b>
+                    
+                    Service资源
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.7" data-path="../kubernetes/ingress.html">
+            
+                <a href="../kubernetes/ingress.html">
+            
+                    
+                        <b>2.1.7.</b>
+                    
+                    Ingress
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.8" data-path="../kubernetes/storage.html">
+            
+                <a href="../kubernetes/storage.html">
+            
+                    
+                        <b>2.1.8.</b>
+                    
+                    存储
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.9" data-path="../kubernetes/configuration.html">
+            
+                <a href="../kubernetes/configuration.html">
+            
+                    
+                        <b>2.1.9.</b>
+                    
+                    配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.10" data-path="../kubernetes/statefulset.html">
+            
+                <a href="../kubernetes/statefulset.html">
+            
+                    
+                        <b>2.1.10.</b>
+                    
+                    StatefulSet
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.11" data-path="../kubernetes/certification-authorization-access-control.html">
+            
+                <a href="../kubernetes/certification-authorization-access-control.html">
+            
+                    
+                        <b>2.1.11.</b>
+                    
+                    认证授权与准入控制
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Docker</li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="readme.html">
+            
+                <a href="readme.html">
+            
+                    
+                        <b>3.1.</b>
+                    
+                    Docker
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1.1" data-path="overview.html">
+            
+                <a href="overview.html">
+            
+                    
+                        <b>3.1.1.</b>
+                    
+                    概述
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.2" data-path="install.html">
+            
+                <a href="install.html">
+            
+                    
+                        <b>3.1.2.</b>
+                    
+                    安装
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.3" data-path="images-and-containers.html">
+            
+                <a href="images-and-containers.html">
+            
+                    
+                        <b>3.1.3.</b>
+                    
+                    镜像和容器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="3.1.4" data-path="data-persistence.html">
+            
+                <a href="data-persistence.html">
+            
+                    
+                        <b>3.1.4.</b>
+                    
+                    数据持久化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.5" data-path="network.html">
+            
+                <a href="network.html">
+            
+                    
+                        <b>3.1.5.</b>
+                    
+                    网络
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.6" data-path="dockerfile.html">
+            
+                <a href="dockerfile.html">
+            
+                    
+                        <b>3.1.6.</b>
+                    
+                    Dockerfile
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="header">MySql</li>
+        
+        
+    
+        <li class="chapter " data-level="4.1" data-path="../mysql/readme.html">
+            
+                <a href="../mysql/readme.html">
+            
+                    
+                        <b>4.1.</b>
+                    
+                    MySql
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.1.1" data-path="../mysql/mysql-base.html">
+            
+                <a href="../mysql/mysql-base.html">
+            
+                    
+                        <b>4.1.1.</b>
+                    
+                    基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="header">笔记</li>
+        
+        
+    
+        <li class="chapter " data-level="5.1" data-path="../../life/dream.html">
+            
+                <a href="../../life/dream.html">
+            
+                    
+                        <b>5.1.</b>
+                    
+                    Dream
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://github.com/honkit/honkit" target="blank" class="gitbook-link">
+            本书使用 HonKit 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >数据持久化</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div class="search-plus" id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="数据持久化">数据持久化</h1>
+<p>由于容器的镜像分层机制，我们在容器里面创建文件或者修改文件，结果都会保存在容器的可读写层中，一旦容器被销毁，那么这个可读写层也会随着容器销毁而消失。而且当一个容器需要和其他容器的读写层进行数据交互时，也会显得非常困难。于是在容器数据持久化方面，Docker 为我们提供了三种持久化的方式。</p>
+<h2 id="bind-mount-持久化方式">bind mount 持久化方式</h2>
+<p>bind mount 本质上是将宿主机上的文件或目录挂载到容器中供容器使用，文件或目录由其主机上的绝对路径或者相对路径引用，这跟 volume 持久化方式由 Docker 统一管理存储目录不一样。如果宿主机上目录不存在则会自动创建，但不能创建文件。如果容器目录非空，则容器目录现有内容会被宿主机目录内容所隐藏，容器内的数据要卸除挂载后才会恢复。</p>
+<p>将宿主机上的 /data/nginx 目录挂载到容器中的 /usr/share/nginx/html 目录，容器内的 nginx 默认页面会被隐藏，即使宿主机的目录为空。</p>
+<pre><code class="lang-bash">docker container run -itd --name <span class="hljs-string">"nginx"</span> --volume /data/nginx:/usr/share/nginx/html nginx:1.20
+
+docker container run -itd --name <span class="hljs-string">"nginx"</span> --mount <span class="hljs-built_in">type</span>=<span class="hljs-built_in">bind</span>,<span class="hljs-built_in">source</span>=/data/nginx,target=/usr/share/nginx/html nginx:1.20
+</code></pre>
+<blockquote>
+<p><strong>[info] 说明</strong></p>
+<p>关于 --volume（-v） 参数和 --mount 参数的区别，最初 --volume 和 -v 参数用于独立容器，--mount 用于集群服务。--volume 和 -v 参数如果源路径不存在则会自动创建，--mount 源路径不存在则会报错。但是在 Docker 17.06 开始，官方推荐使用 --mount 去进行挂载，因为只有 --mount 支持指定卷驱动类型，同时语法更明确和易于理解，新用户都应使用 --mount 参数。</p>
+</blockquote>
+<p>bind mount 无法使用 docker cli 命令直接管理，我们可以在容器的详细信息里看到挂载的内容。</p>
+<pre><code class="lang-bash">[root@docker ~]# docker container inspect nginx | grep Mounts
+<span class="hljs-string">"Mounts"</span>: [
+            {
+                <span class="hljs-string">"Type"</span>: <span class="hljs-string">"bind"</span>,
+                <span class="hljs-string">"Source"</span>: <span class="hljs-string">"/data/nginx"</span>,
+                <span class="hljs-string">"Destination"</span>: <span class="hljs-string">"/usr/share/nginx/html"</span>,
+                <span class="hljs-string">"Mode"</span>: <span class="hljs-string">""</span>,
+                <span class="hljs-string">"RW"</span>: <span class="hljs-literal">true</span>,
+                <span class="hljs-string">"Propagation"</span>: <span class="hljs-string">"rprivate"</span>
+            }
+        ]
+</code></pre>
+<p>bind mount 默认挂载开启了 rw 模式，如果容器只需要读访问权限，我们也可以将目录挂载为只读。</p>
+<pre><code class="lang-bash">[root@docker ~]# docker container run -itd --name <span class="hljs-string">"nginx"</span> --mount <span class="hljs-built_in">type</span>=<span class="hljs-built_in">bind</span>,<span class="hljs-built_in">source</span>=/data/nginx,target=/usr/share/nginx/html,<span class="hljs-built_in">readonly</span> nginx:1.20
+a5c5f217e2557f58e83276ba9be9fd75e6127b34e918199d379b7734dac5806f
+[root@docker ~]# docker <span class="hljs-built_in">exec</span> -it nginx /bin/bash
+root@a5c5f217e255:/# <span class="hljs-built_in">echo</span> <span class="hljs-string">'test'</span> &gt; /usr/share/nginx/html/index.html
+bash: /usr/share/nginx/html/index.html: Read-only file system
+root@a5c5f217e255:/#
+</code></pre>
+<h2 id="volume-持久化方式">volume 持久化方式</h2>
+<p>volume 由 Docker 负责管理，可以使用 docker volume create 命令创建 volume。Docker 创建的 volume 本质上还是宿主机文件系统中的一个目录（可以使用 docker volume inspect 命令查看目录路径），一个 volume 可以供一个或多个容器一同使用，即使没有容器使用此 volume 它也不会自动删除，除非用户明确删除它。如果是用户使用命令创建的则需要指定名称，如果是 container 和 service 启动的隐式创建，Docker 则会为它分配一个宿主机范围内唯一的名字。通过使用第三方提供的 volume driver，用户可以将数据持久化到远程主机或者云存储中，也就是说存储空间可以不由宿主机提供。</p>
+<p>管理 volume 资源使用 docker volume 命令。</p>
+<pre><code class="lang-bash"><span class="hljs-comment"># 创建 volume</span>
+docker volume create nginx_volumes
+
+<span class="hljs-comment"># 查看 volume</span>
+docker volume <span class="hljs-built_in">ls</span>
+
+<span class="hljs-comment"># 查看 volume 信息</span>
+docker volume inspect nginx_volumes
+
+<span class="hljs-comment"># 删除 volumes</span>
+docker volume <span class="hljs-built_in">rm</span> nginx_volumes
+</code></pre>
+<p>可以先创建好 volume，启动容器时再指定 volume，也可以在启动容器时直接指定 volume，如果不存在则自动创建 volume。</p>
+<pre><code class="lang-bash">docker container run -itd --name <span class="hljs-string">"nginx"</span> -p 80:80 --volume nginx_volumes:/usr/share/nginx/html nginx:1.20
+
+docker container run -itd --name <span class="hljs-string">"nginx"</span> -p 80:80 --mount <span class="hljs-built_in">source</span>=nginx_volumes,target=/usr/share/nginx/html nginx:1.20
+</code></pre>
+<blockquote>
+<p><strong>[info] 说明</strong></p>
+<p>关于 --volume（-v） 参数和 --mount 参数的区别，最初 --volume 和 -v 参数用于独立容器，--mount 用于集群服务。--volume 和 -v 参数如果源路径不存在则会自动创建，--mount 源路径不存在则会报错。但是在 Docker 17.06 开始，官方推荐使用 --mount 去进行挂载，因为只有 --mount 支持指定卷驱动类型，同时语法更明确和易于理解，新用户都应使用 --mount 参数。</p>
+</blockquote>
+<p>我们能够看到容器内的文件已经被映射到宿主机的 volume 目录上了。</p>
+<pre><code class="lang-bash">[root@docker ~]# docker volume inspect nginx_volumes
+[
+    {
+        <span class="hljs-string">"CreatedAt"</span>: <span class="hljs-string">"2021-12-21T11:12:19+08:00"</span>,
+        <span class="hljs-string">"Driver"</span>: <span class="hljs-string">"local"</span>,
+        <span class="hljs-string">"Labels"</span>: null,
+        <span class="hljs-string">"Mountpoint"</span>: <span class="hljs-string">"/var/lib/docker/volumes/nginx_volumes/_data"</span>,
+        <span class="hljs-string">"Name"</span>: <span class="hljs-string">"nginx_volumes"</span>,
+        <span class="hljs-string">"Options"</span>: null,
+        <span class="hljs-string">"Scope"</span>: <span class="hljs-string">"local"</span>
+    }
+]
+[root@docker ~]# ll /var/lib/docker/volumes/nginx_volumes/_data
+total 16
+drwxr-xr-x 2 root root 4096 Dec 21 11:12 ./
+drwx-----x 3 root root 4096 Dec 21 11:12 ../
+-rw-r--r-- 1 root root  494 Nov 16 22:44 50x.html
+-rw-r--r-- 1 root root  612 Nov 16 22:44 index.html
+[root@docker ~]#
+</code></pre>
+<p>volume 持久化方式宿主机和容器的文件映射，当宿主机 volume 目录非空时以宿主机的文件为准，当宿主机 volume 目录为空时将会把容器内的数据复制到宿主机后再以宿主机为准。</p>
+<h2 id="tmpfs-持久化方式">tmpfs 持久化方式</h2>
+<p>tmpfs 挂载是临时的，并且仅保留在宿主机的内存中。当容器停止时，tmpfs 挂载将被删除，而且 tmpfs 挂载不能在多个容器之间共享。我们可以使用 --tmpfs 或者 --mount 参数创建 tmpfs 挂载。</p>
+<pre><code class="lang-bash">docker container run -itd --name <span class="hljs-string">"nginx"</span> -p 80:80 --tmpfs /usr/share/nginx/html nginx:1.20
+
+docker container run -itd --name <span class="hljs-string">"nginx"</span> -p 80:80 --mount <span class="hljs-built_in">type</span>=tmpfs,destination=/usr/share/nginx/html nginx:1.20
+</code></pre>
+<blockquote>
+<p><strong>[info] 说明</strong></p>
+<p>关于 --tmpfs 和 --mount 参数，--tmpfs 参数不允许指定任何可配置选项，需要可配置选项必须使用 --mount。同时 --mount 参数的语法更明确和易于理解，推荐使用 --mount 参数。</p>
+</blockquote>
+<p>通过 tmpfs 挂载还有两个可选参数，但是在指定可选参数时，必须使用 --mount 标志，因为 --tmpfs 不支持。</p>
+<table>
+<thead>
+<tr>
+<th>可选参数</th>
+<th>作用</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>tmpfs-size</td>
+<td>指定 tmpfs 挂载的大小，以字节为单位，默认无限制。</td>
+</tr>
+<tr>
+<td>tmpfs-mode</td>
+<td>八进制中 tmpfs 的文件模式，默认为 1777。</td>
+</tr>
+</tbody>
+</table>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="images-and-containers.html" class="navigation navigation-prev " aria-label="Previous page: 镜像和容器">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="network.html" class="navigation navigation-next " aria-label="Next page: 网络">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"数据持久化","level":"3.1.4","depth":2,"next":{"title":"网络","level":"3.1.5","depth":2,"path":"worknote/docker/network.md","ref":"worknote/docker/network.md","articles":[]},"previous":{"title":"镜像和容器","level":"3.1.3","depth":2,"path":"worknote/docker/images-and-containers.md","ref":"worknote/docker/images-and-containers.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-lunr","-search","-sharing","search-plus","github","expandable-chapters"],"root":".","styles":{"website":"styles/website.css"},"pluginsConfig":{"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":true},"github":{"url":"https://github.com/MF-ReStart/mf-restart.github.io"},"search-plus":{},"expandable-chapters":{},"highlight":{},"fontsettings":{"theme":"white","family":"sans","size":2}},"theme":"default","author":"荒原饮露","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"荒原饮露的笔记","language":"zh-hans","gitbook":"*","description":"记录工作和生活"},"file":{"path":"worknote/docker/data-persistence.md","mtime":"2026-01-30T01:33:18.792Z","type":"markdown"},"gitbook":{"version":"6.1.6","time":"2026-01-30T02:26:03.816Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <noscript>
+        <style>
+            .honkit-cloak {
+                display: block !important;
+            }
+        </style>
+    </noscript>
+    <script>
+        // Restore sidebar state as critical path for prevent layout shift
+        function __init__getSidebarState(defaultValue){
+            var baseKey = "";
+            var key = baseKey + ":sidebar";
+            try {
+                var value = localStorage[key];
+                if (value === undefined) {
+                    return defaultValue;
+                }
+                var parsed = JSON.parse(value);
+                return parsed == null ? defaultValue : parsed;
+            } catch (e) {
+                return defaultValue;
+            }
+        }
+        function __init__restoreLastSidebarState() {
+            var isMobile = window.matchMedia("(max-width: 600px)").matches;
+            if (isMobile) {
+                // Init last state if not mobile
+                return;
+            }
+            var sidebarState = __init__getSidebarState(true);
+            var book = document.querySelector(".book");
+            // Show sidebar if it enabled
+            if (sidebarState && book) {
+                book.classList.add("without-animation", "with-summary");
+            }
+        }
+
+        try {
+            __init__restoreLastSidebarState();
+        } finally {
+            var book = document.querySelector(".book");
+            book.classList.remove("honkit-cloak");
+        }
+    </script>
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search-plus/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search-plus/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.js"></script>
+        
+    
+        
+        <script src="../../gitbook/@honkit/honkit-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
